@@ -1,0 +1,575 @@
+:root {
+    --primary-color: #595CA3;
+    --secondary-color: #00A897;
+    --pink-color: #FF008B;
+    --gray-color: #575756;
+    --iskan-color: #005295;
+    --white-color: #FFFFFF;
+    --isknovetors-color: #B79977;
+    --bg-body: #F1F3F5;
+    --font-family: 'Noto Kufi Arabic';
+    --line-height: 1.8rem;
+    --title-line-height: 3rem;
+}
+
+/* Font Family */
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Black.eot');
+    src: url('/assets/font/NotoKufiArabic-Black.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Black.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Black.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Black.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Black.svg#NotoKufiArabic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Bold.eot');
+    src: url('/assets/font/NotoKufiArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Bold.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Bold.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Bold.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Bold.svg#NotoKufiArabic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-ExtraBold.eot');
+    src: url('/assets/font/NotoKufiArabic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-ExtraBold.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-ExtraBold.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-ExtraBold.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-ExtraBold.svg#NotoKufiArabic-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-ExtraLight.eot');
+    src: url('/assets/font/NotoKufiArabic-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-ExtraLight.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-ExtraLight.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-ExtraLight.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-ExtraLight.svg#NotoKufiArabic-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Light.eot');
+    src: url('/assets/font/NotoKufiArabic-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Light.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Light.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Light.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Light.svg#NotoKufiArabic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Medium.eot');
+    src: url('/assets/font/NotoKufiArabic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Medium.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Medium.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Medium.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Medium.svg#NotoKufiArabic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Regular.eot');
+    src: url('/assets/font/NotoKufiArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Regular.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Regular.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Regular.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Regular.svg#NotoKufiArabic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-SemiBold.eot');
+    src: url('/assets/font/NotoKufiArabic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-SemiBold.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-SemiBold.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-SemiBold.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-SemiBold.svg#NotoKufiArabic-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/assets/font/NotoKufiArabic-Thin.eot');
+    src: url('/assets/font/NotoKufiArabic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/NotoKufiArabic-Thin.woff2') format('woff2'),
+        url('/assets/font/NotoKufiArabic-Thin.woff') format('woff'),
+        url('/assets/font/NotoKufiArabic-Thin.ttf') format('truetype'),
+        url('/assets/font/NotoKufiArabic-Thin.svg#NotoKufiArabic-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--gray-color);
+    background-color: var(--bg-body);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--line-height);
+    font-feature-settings: "liga" 1, "kern" 0;
+}
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* margin: 5px 0px; */
+}
+
+th,
+td {
+    color: var(--primary-color) !important;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li::marker {
+    color: var(--primary-color);
+}
+
+.arabic-version {
+    direction: rtl;
+}
+
+@media (min-width: 2030px) {
+    :root {
+        --container-width: 80vw;
+    }
+
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2030px) {
+    :root {
+        --container-width: 80vw;
+    }
+
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    :root {
+        --container-width: 1140px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    :root {
+        --container-width: 960px;
+    }
+
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:991.98px) {
+    :root {
+        --container-width: 720px;
+    }
+
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --container-width: 540px;
+    }
+
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --container-width: 100vw;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .container-fluid {
+        max-width: 90%;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .container .container,
+    .container-fluid .container {
+        max-width: 100%;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    line-height: var(--title-line-height);
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p,
+li,
+h6 {
+    font-size: .95rem;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+}
+
+span,
+.card-date {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+th {
+    font-size: .9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+ul {
+    list-style: disc;
+    padding-left: unset;
+    padding-inline-start: 2rem;
+}
+
+/* Webkit box  */
+.only-1-lines {
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(1* var(--line-height) + 2px);
+}
+
+.only-2-lines {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(2* var(--line-height) + 2px);
+}
+
+.title-only-2-lines {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(2* var(--title-line-height) + 2px);
+}
+
+.only-3-lines {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(3* var(--line-height) + 2px);
+}
+
+.only-4-lines {
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(4* var(--line-height) + 2px);
+}
+
+.default-image-class {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cover-image-class {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Default Classes */
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary-color {
+    color: var(--secondary-color) !important;
+}
+
+.text-pink-color {
+    color: var(--pink-color) !important;
+}
+
+.text-gray-color {
+    color: var(--gray-color) !important;
+}
+
+.text-iskan-color {
+    color: var(--iskan-color) !important;
+}
+
+.text-white-color {
+    color: var(--white-color) !important;
+}
+
+.text-isknovetors-color {
+    color: var(--isknovetors-color) !important;
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary-color {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-pink-color {
+    background-color: var(--pink-color) !important;
+}
+
+.bg-gray-color {
+    background-color: var(--gray-color) !important;
+}
+
+.bg-iskan-color {
+    background-color: var(--iskan-color) !important;
+}
+
+.bg-white-color {
+    background-color: var(--white-color) !important;
+}
+
+.bg-isknovetors-color {
+    background-color: var(--isknovetors-color) !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.radius-5 {
+    border-radius: 5px;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.arabic-version .fa-arrow-right,
+.arabic-version .fa-arrow-left {
+    scale: -1;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: var(--white-color);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Start Header Images */
+.header-image-section .header-image-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.header-image-section .header-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000099;
+    z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+    .header-image-section .header-image img {
+        min-height: 90svh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-image-section .header-image img {
+        min-height: 70svh;
+        object-fit: cover;
+    }
+}
+
+/* Start Section Links */
+.section-links-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.title-link {
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.section-links.primary-section-links .title-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Start Reels Section */
+.reels-section .reels-section-container {
+    display: flex;
+    gap: 20px;
+}
+
+.reels-section .reels-section-container a {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.reels-section.primary-reels-section a {
+    border: 5px solid var(--primary-color);
+}
+
+.reels-section .reels-section-container a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000066;
+    transition: opacity 0.3s ease;
+}
+
+.reels-section .reels-section-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.reels-section .reels-section-container a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reels-section .reels-section-container .play-icon {
+    background-color: #FFFFFF59;
+    width: 45px;
+    height: 45px;
+}
+
+/* End Reels Section */
