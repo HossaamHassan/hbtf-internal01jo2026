@@ -1,0 +1,124 @@
+label {
+    font-weight: 700;
+}
+
+label span {
+    color: #D71F26;
+}
+
+input,
+select {
+    padding-block: 12px !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    padding-block: 0 !important;
+}
+
+.form-control {
+    width: 100%;
+    outline: var(--main-border);
+    border-radius: var(--radius-circle);
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: unset;
+    outline: 2px solid rgb(0 38 62 / 10%);
+}
+
+.form-control::placeholder {
+    color: rgb(45 41 38 / 30%) !important;
+}
+
+.form-select {
+    width: 100%;
+    outline: var(--main-border);
+    border-radius: var(--radius-circle);
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.form-select:focus {
+    border: none;
+    box-shadow: unset;
+    outline: 1px solid rgb(0 38 62 / 10%);
+}
+
+.arabic-version .form-select {
+    background-position: left .75rem center;
+    padding: .375rem .75rem .375rem 2.25rem;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    outline: var(--main-border);
+    border-radius: var(--radius-circle);
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.form-textarea::placeholder {
+    color: rgb(45 41 38 / 30%) !important;
+}
+
+.form-textarea:focus {
+    border: none;
+    box-shadow: unset;
+    outline: 2px solid var(--primary-color);
+}
+
+.form-check-input {
+    width: 22px;
+    height: 22px;
+    border: var(--main-border) !important;
+}
+
+.form-check-input:focus {
+    box-shadow: unset;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border: var(--primary-color) !important;
+}
+
+.checkbox-btns-container,
+.radio-btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem
+}
+
+.arabic-version .radio-btns-container,
+.arabic-version .checkbox-btns-container {
+    direction: rtl;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-check span {
+    padding-top: 0.3rem;
+}
+
+.arabic-version .form-check {
+    gap: 0;
+}
+
+.arabic-version .form-check-input {
+    margin: 0;
+    float: none;
+    margin-inline-end: 0.5em;
+}
