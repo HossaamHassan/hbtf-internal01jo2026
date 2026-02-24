@@ -122,3 +122,27 @@ input[type="checkbox"] {
     float: none;
     margin-inline-end: 0.5em;
 }
+
+
+/* Filters Section */
+.filters-section {
+    margin-bottom: 1.9rem;
+}
+
+.filters-section .filter-select-input {
+    padding-inline: 1.25rem !important;
+    padding-block: 13px !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    outline: 1px solid rgba(87 87 86 / 25%);
+    color: var(--gray-color);
+    background-image: url('../assets/icons/Arrow_drop_left.svg');
+    background-position: left 0.65rem center;
+    background-size: 1.5rem;
+}
+
+.filters-section .filter-select-input:focus {
+    box-shadow: none;
+    border: none;
+    outline-color: rgba(89 92 163 / 70%);
+}
