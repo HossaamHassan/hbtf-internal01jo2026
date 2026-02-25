@@ -103,7 +103,7 @@
             <!-- Tab Panes -->
             <div class="tab-content" id="tabPanesContent">
               <div
-                class="tab-pane fade active show"
+                class="tab-pane radio-tab-pane fade active show"
                 id="tab1"
                 role="tabpanel"
                 aria-labelledby="tab1-tab"
@@ -112,38 +112,41 @@
                   <table class="table permissions-table align-middle mb-0">
                     <thead>
                       <tr>
-                        <th
-                          scope="col"
-                          class="permissions-col-name d-flex justify-content-between align-items-center gap-3"
-                        >
-                          <h5 class="mb-0">الاسم</h5>
-                          <div class="permissions-search-wrapper">
-                            <input
-                              type="text"
-                              class="form-control permissions-search-input radius-8"
-                              placeholder="البحث عن طريق الكلمات الرئيسية"
-                              aria-label="البحث عن طريق الكلمات الرئيسية"
-                            />
-                            <span class="permissions-search-icon">
+                        <th scope="col" class="permissions-col-name">
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <h5 class="mb-0">الاسم</h5>
+                            <div class="permissions-search-wrapper">
+                              <input
+                                type="text"
+                                class="form-control permissions-search-input radius-8"
+                                placeholder="البحث عن طريق الكلمات الرئيسية"
+                                aria-label="البحث عن طريق الكلمات الرئيسية"
+                              />
+                              <span class="permissions-search-icon">
+                                <picture>
+                                  <img
+                                    src="./assets/icons/Search_alt.svg"
+                                    alt=""
+                                  />
+                                </picture>
+                              </span>
+                            </div>
+                            <div class="sort-wrapper">
                               <picture>
                                 <img
-                                  src="./assets/icons/Search_alt.svg"
+                                  src="./assets/icons/Up - Down arrow.svg"
                                   alt=""
                                 />
                               </picture>
-                            </span>
-                          </div>
-                          <div class="sort-wrapper">
-                            <picture>
-                              <img
-                                src="./assets/icons/Up - Down arrow.svg"
-                                alt=""
-                              />
-                            </picture>
+                            </div>
                           </div>
                         </th>
                         <th scope="col" class="align-content-center">
-                          <h5 class="mb-0">الامر</h5>
+                          <div class="align-content-center">
+                            <h5 class="mb-0">الامر</h5>
+                          </div>
                         </th>
                       </tr>
                     </thead>
@@ -368,7 +371,7 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane radio-tab-pane fade"
                 id="tab2"
                 role="tabpanel"
                 aria-labelledby="tab2-tab"
@@ -377,22 +380,25 @@
                   <table class="table policies-table align-middle mb-0">
                     <thead>
                       <tr>
-                        <th
-                          scope="col"
-                          class="permissions-col-name d-flex justify-content-between align-items-center gap-3"
-                        >
-                          <h5 class="mb-0">الاسم</h5>
-                          <div class="sort-wrapper">
-                            <picture>
-                              <img
-                                src="./assets/icons/Up - Down arrow.svg"
-                                alt=""
-                              />
-                            </picture>
+                        <th scope="col" class="permissions-col-name">
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <h5 class="mb-0">الاسم</h5>
+                            <div class="sort-wrapper">
+                              <picture>
+                                <img
+                                  src="./assets/icons/Up - Down arrow.svg"
+                                  alt=""
+                                />
+                              </picture>
+                            </div>
                           </div>
                         </th>
-                        <th scope="col" class="align-content-center">
-                          <h5 class="mb-0">الامر</h5>
+                        <th scope="col">
+                          <div class="align-content-center">
+                            <h5 class="mb-0">الامر</h5>
+                          </div>
                         </th>
                       </tr>
                     </thead>
@@ -617,21 +623,21 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane radio-tab-pane fade"
                 id="tab3"
                 role="tabpanel"
                 aria-labelledby="tab3-tab"
               >
                 <div class="filters-section">
                   <div class="row gx-0 gy-3 gx-md-3 gy-md-0">
-                    <div class="col-md-4 select-col">
+                    <div class="col-md-4">
                       <select class="form-select filter-select-input radius-8">
                         <option value="القروض" selected>القروض</option>
                         <option value="">1</option>
                         <option value="">2</option>
                       </select>
                     </div>
-                    <div class="col-md-4 select-col">
+                    <div class="col-md-4">
                       <select class="form-select filter-select-input radius-8">
                         <option value="اختر نوع القرض" selected>
                           اختر نوع القرض
@@ -640,7 +646,7 @@
                         <option value="">2</option>
                       </select>
                     </div>
-                    <div class="col-md-4 select-col">
+                    <div class="col-md-4">
                       <select class="form-select filter-select-input radius-8">
                         <option value="نماذج" selected>نماذج</option>
                         <option value="">1</option>
@@ -653,22 +659,25 @@
                   <table class="table services-table align-middle mb-0">
                     <thead>
                       <tr>
-                        <th
-                          scope="col"
-                          class="permissions-col-name d-flex justify-content-between align-items-center gap-3"
-                        >
-                          <h5 class="mb-0">الاسم</h5>
-                          <div class="sort-wrapper">
-                            <picture>
-                              <img
-                                src="./assets/icons/Up - Down arrow.svg"
-                                alt=""
-                              />
-                            </picture>
+                        <th scope="col" class="permissions-col-name">
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <h5 class="mb-0">الاسم</h5>
+                            <div class="sort-wrapper">
+                              <picture>
+                                <img
+                                  src="./assets/icons/Up - Down arrow.svg"
+                                  alt=""
+                                />
+                              </picture>
+                            </div>
                           </div>
                         </th>
-                        <th scope="col" class="align-content-center">
-                          <h5 class="mb-0">الامر</h5>
+                        <th scope="col">
+                          <div class="align-content-center">
+                            <h5 class="mb-0">الامر</h5>
+                          </div>
                         </th>
                       </tr>
                     </thead>
@@ -893,14 +902,14 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane radio-tab-pane fade"
                 id="tab4"
                 role="tabpanel"
                 aria-labelledby="tab4-tab"
               >
                 <div class="filters-section">
                   <div class="row gx-0 gy-3 gx-md-3 gy-md-0">
-                    <div class="col-md-3 select-col">
+                    <div class="col-md-3">
                       <select class="form-select filter-select-input radius-8">
                         <option value="اختر القطاع" selected>
                           اختر القطاع
@@ -909,7 +918,7 @@
                         <option value="">2</option>
                       </select>
                     </div>
-                    <div class="col-md-3 select-col">
+                    <div class="col-md-3">
                       <select class="form-select filter-select-input radius-8">
                         <option value="اختر الدائرة" selected>
                           اختر الدائرة
@@ -918,7 +927,7 @@
                         <option value="">2</option>
                       </select>
                     </div>
-                    <div class="col-md-3 select-col">
+                    <div class="col-md-3">
                       <select class="form-select filter-select-input radius-8">
                         <option value="اختر المركز" selected>
                           اختر المركز
@@ -927,7 +936,7 @@
                         <option value="">2</option>
                       </select>
                     </div>
-                    <div class="col-md-3 select-col">
+                    <div class="col-md-3">
                       <select class="form-select filter-select-input radius-8">
                         <option value="إجراءات" selected>إجراءات</option>
                         <option value="">1</option>
@@ -940,22 +949,25 @@
                   <table class="table sectors-table align-middle mb-0">
                     <thead>
                       <tr>
-                        <th
-                          scope="col"
-                          class="permissions-col-name d-flex justify-content-between align-items-center gap-3"
-                        >
-                          <h5 class="mb-0">الاسم</h5>
-                          <div class="sort-wrapper">
-                            <picture>
-                              <img
-                                src="./assets/icons/Up - Down arrow.svg"
-                                alt=""
-                              />
-                            </picture>
+                        <th scope="col" class="permissions-col-name">
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <h5 class="mb-0">الاسم</h5>
+                            <div class="sort-wrapper">
+                              <picture>
+                                <img
+                                  src="./assets/icons/Up - Down arrow.svg"
+                                  alt=""
+                                />
+                              </picture>
+                            </div>
                           </div>
                         </th>
-                        <th scope="col" class="align-content-center">
-                          <h5 class="mb-0">الامر</h5>
+                        <th scope="col">
+                          <div class="align-content-center">
+                            <h5 class="mb-0">الامر</h5>
+                          </div>
                         </th>
                       </tr>
                     </thead>
@@ -1191,7 +1203,7 @@
       $(document).ready(function () {
         function activateTabPane($radio) {
           var target = $radio.data("bs-target");
-          $(".tab-pane").removeClass("show active");
+          $(".radio-tab-pane").removeClass("show active");
           if (target) {
             $(target).addClass("show active");
           }

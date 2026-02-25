@@ -1,0 +1,1547 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/branches-atms-network.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <title>شبكة فروع البنك والصرافات الآلية</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-20">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">
+          شبكة فروع البنك والصرافات الآلية
+        </h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Branches & Atms Network Section Start -->
+    <section class="branches-atms-network-section pb-4">
+      <!-- Tabs Navigation -->
+      <div class="countries-tabs-container">
+        <div class="container">
+          <ul
+            class="nav nav-tabs countries-tabs"
+            id="countriesTabs"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <h6
+                class="nav-link active"
+                id="jordan-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#jordan"
+                type="button"
+                role="tab"
+                aria-controls="jordan"
+                aria-selected="true"
+              >
+                الأردن
+              </h6>
+            </li>
+            <li class="nav-item" role="presentation">
+              <h6
+                class="nav-link"
+                id="palestine-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#palestine"
+                type="button"
+                role="tab"
+                aria-controls="palestine"
+                aria-selected="true"
+              >
+                فلسطين
+              </h6>
+            </li>
+            <li class="nav-item" role="presentation">
+              <h6
+                class="nav-link"
+                id="bahrain-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#bahrain"
+                type="button"
+                role="tab"
+                aria-controls="bahrain"
+                aria-selected="false"
+              >
+                البحرين
+              </h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Tabs Content -->
+        <div class="tab-content countries-tab-content" id="countriesTabContent">
+          <div
+            class="tab-pane jordan-tab fade active show"
+            id="jordan"
+            role="tabpanel"
+            aria-labelledby="jordan-tab"
+          >
+            <div
+              class="w-100 position-relative d-flex justify-content-center align-items-center gap-3 flex-column flex-sm-row"
+            >
+              <!-- Custom Tab Navigation (Radio Style) -->
+              <div
+                class="tab-radio-group d-flex justify-content-center gap-4"
+                id="tabPanesNav"
+                role="tablist"
+              >
+                <label
+                  class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+                >
+                  <input
+                    type="radio"
+                    class="tab-radio-input"
+                    name="tab-radio"
+                    id="branches-tab-radio"
+                    data-bs-toggle="pill"
+                    data-bs-target="#branches-tab"
+                    checked
+                  />
+                  <h4 class="mb-0">الفروع</h4>
+                </label>
+                <label
+                  class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+                >
+                  <input
+                    type="radio"
+                    class="tab-radio-input"
+                    name="tab-radio"
+                    id="atms-tab-radio"
+                    data-bs-toggle="pill"
+                    data-bs-target="#atms-tab"
+                  />
+                  <h4 class="mb-0">الصرافات</h4>
+                </label>
+              </div>
+              <button class="primary-btn">
+                <span>تصدير</span>
+                <picture>
+                  <img src="./assets/icons/FileXls.svg" alt="" />
+                </picture>
+              </button>
+            </div>
+            <div
+              class="tab-content inner-countries-tab-content"
+              id="innerCountriesTabContent"
+            >
+              <div
+                class="tab-pane radio-tab-pane branches-tab fade active show"
+                id="branches-tab"
+                role="tabpanel"
+                aria-labelledby="branches-tab"
+              >
+                <div class="filters-section radius-8 mb-3">
+                  <div class="row gx-0 gy-3 gx-lg-3 gy-lg-0 align-items-center">
+                    <div class="col-lg-4">
+                      <div class="search-wrapper">
+                        <input
+                          type="text"
+                          class="form-control search-input radius-8"
+                          placeholder="البحث عن طريق الكلمات الرئيسية"
+                          aria-label="البحث عن طريق الكلمات الرئيسية"
+                        />
+                        <span class="search-icon">
+                          <picture>
+                            <img src="./assets/icons/Search_alt.svg" alt="" />
+                          </picture>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <select class="form-select filter-select-input radius-8">
+                        <option value="المدينة" selected>المدينة</option>
+                        <option value="">عمان</option>
+                        <option value="">إربد</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <select class="form-select filter-select-input radius-8">
+                        <option value="الخدمات" selected>الخدمات</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-2">
+                      <button class="btn reset-btn text-gray-color">
+                        <h6 class="d-inline">إعادة تعيين</h6>
+                        <picture>
+                          <img src="./assets/icons/Refresh_2.svg" alt="" />
+                        </picture>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div
+                      class="atm-card-title text-primary-color d-flex align-items-center gap-2"
+                    >
+                      <h2 class="mb-1">سيتي مول</h2>
+                      <div
+                        class="alert-badge d-flex align-items-center gap-1 radius-6"
+                      >
+                        <picture>
+                          <img src="./assets/icons/Info_fill.svg" alt="" />
+                        </picture>
+                        <span>تنويه</span>
+                      </div>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>دائرة العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span>
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الفرع: 123</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>0795860949 الرقم الداخلي: 3493</h6>
+                          <h6>br001@hbtf.com.jo</h6>
+                          <h6>رقم الفاكس: 4011268 6 962+</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>
+                            العنوان: عمان - العبدلي - شارع الملك حسين- شارع
+                            الاستثمار - العبدلي مول
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير الفرع</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            ياسر خضير | 0795860949 - فرعي 3490
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير المنطقة</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            جواد الشوارب/ تكليف | 0795860949
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            دوام موظفي الفرع
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            من السبت الى الخميس من الساعة 9:30 صباحا الى 10:15
+                            مساءا  ويوم الجمعة من الساعة 1:45 بعد الظهر الى10:15
+                            مساءا
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            التعامل مع الجمهور
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            سبت-خميس 10:00 AM - 3:00 PM 4:00 PM - 10:00 PM يوم
+                            الجمعة من 2:00 م إلى 10:00 م
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0 mt-1 mt-lg-3">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">
+                          المسؤول الثاني بالفرع
+                        </h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">اياس أبو صقر</h6>
+                              <h6 class="mb-0">0786900210</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">ساره كبوشي</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">الخدمات</h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-12 separated-info-col">
+                            <div
+                              class="separated-info d-flex justify-content-center align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">مصفات للسيارت</h6>
+                              <h6 class="mb-0">خدمات إسكان بلس</h6>
+                              <h6 class="mb-0">منحدرات - رامبات صناديق الأمانات</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div
+                      class="atm-card-title text-primary-color d-flex align-items-center gap-2"
+                    >
+                      <h2 class="mb-1">سيتي مول</h2>
+                      <div
+                        class="alert-badge d-flex align-items-center gap-1 radius-6"
+                      >
+                        <picture>
+                          <img src="./assets/icons/Info_fill.svg" alt="" />
+                        </picture>
+                        <span>تنويه</span>
+                      </div>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>دائرة العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span>
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الفرع: 123</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>0795860949 الرقم الداخلي: 3493</h6>
+                          <h6>br001@hbtf.com.jo</h6>
+                          <h6>رقم الفاكس: 4011268 6 962+</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>
+                            العنوان: عمان - العبدلي - شارع الملك حسين- شارع
+                            الاستثمار - العبدلي مول
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير الفرع</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            ياسر خضير | 0795860949 - فرعي 3490
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير المنطقة</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            جواد الشوارب/ تكليف | 0795860949
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            دوام موظفي الفرع
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            من السبت الى الخميس من الساعة 9:30 صباحا الى 10:15
+                            مساءا  ويوم الجمعة من الساعة 1:45 بعد الظهر الى10:15
+                            مساءا
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            التعامل مع الجمهور
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            سبت-خميس 10:00 AM - 3:00 PM 4:00 PM - 10:00 PM يوم
+                            الجمعة من 2:00 م إلى 10:00 م
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0 mt-1 mt-lg-3">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">
+                          المسؤول الثاني بالفرع
+                        </h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">اياس أبو صقر</h6>
+                              <h6 class="mb-0">0786900210</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">ساره كبوشي</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">الخدمات</h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-12 separated-info-col">
+                            <div
+                              class="separated-info d-flex justify-content-center align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">مصفات للسيارت</h6>
+                              <h6 class="mb-0">خدمات إسكان بلس</h6>
+                              <h6 class="mb-0">منحدرات - رامبات صناديق الأمانات</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div
+                      class="atm-card-title text-primary-color d-flex align-items-center gap-2"
+                    >
+                      <h2 class="mb-1">سيتي مول</h2>
+                      <div
+                        class="alert-badge d-flex align-items-center gap-1 radius-6"
+                      >
+                        <picture>
+                          <img src="./assets/icons/Info_fill.svg" alt="" />
+                        </picture>
+                        <span>تنويه</span>
+                      </div>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>دائرة العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span>
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الفرع: 123</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>0795860949 الرقم الداخلي: 3493</h6>
+                          <h6>br001@hbtf.com.jo</h6>
+                          <h6>رقم الفاكس: 4011268 6 962+</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>
+                            العنوان: عمان - العبدلي - شارع الملك حسين- شارع
+                            الاستثمار - العبدلي مول
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير الفرع</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            ياسر خضير | 0795860949 - فرعي 3490
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير المنطقة</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            جواد الشوارب/ تكليف | 0795860949
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            دوام موظفي الفرع
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            من السبت الى الخميس من الساعة 9:30 صباحا الى 10:15
+                            مساءا  ويوم الجمعة من الساعة 1:45 بعد الظهر الى10:15
+                            مساءا
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            التعامل مع الجمهور
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            سبت-خميس 10:00 AM - 3:00 PM 4:00 PM - 10:00 PM يوم
+                            الجمعة من 2:00 م إلى 10:00 م
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0 mt-1 mt-lg-3">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">
+                          المسؤول الثاني بالفرع
+                        </h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">اياس أبو صقر</h6>
+                              <h6 class="mb-0">0786900210</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">ساره كبوشي</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">الخدمات</h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-12 separated-info-col">
+                            <div
+                              class="separated-info d-flex justify-content-center align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">مصفات للسيارت</h6>
+                              <h6 class="mb-0">خدمات إسكان بلس</h6>
+                              <h6 class="mb-0">منحدرات - رامبات صناديق الأمانات</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div
+                      class="atm-card-title text-primary-color d-flex align-items-center gap-2"
+                    >
+                      <h2 class="mb-1">سيتي مول</h2>
+                      <div
+                        class="alert-badge d-flex align-items-center gap-1 radius-6"
+                      >
+                        <picture>
+                          <img src="./assets/icons/Info_fill.svg" alt="" />
+                        </picture>
+                        <span>تنويه</span>
+                      </div>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>دائرة العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span>
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الفرع: 123</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>0795860949 الرقم الداخلي: 3493</h6>
+                          <h6>br001@hbtf.com.jo</h6>
+                          <h6>رقم الفاكس: 4011268 6 962+</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>
+                            العنوان: عمان - العبدلي - شارع الملك حسين- شارع
+                            الاستثمار - العبدلي مول
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير الفرع</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            ياسر خضير | 0795860949 - فرعي 3490
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">مدير المنطقة</h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            جواد الشوارب/ تكليف | 0795860949
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            دوام موظفي الفرع
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            من السبت الى الخميس من الساعة 9:30 صباحا الى 10:15
+                            مساءا  ويوم الجمعة من الساعة 1:45 بعد الظهر الى10:15
+                            مساءا
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
+                      <div
+                        class="branch-card-info d-flex flex-column flex-grow-1 radius-8 mt-3"
+                      >
+                        <div class="branch-card-info-header">
+                          <h5 class="text-primary-color mb-0">
+                            التعامل مع الجمهور
+                          </h5>
+                        </div>
+                        <div
+                          class="branch-card-info-body d-flex flex-column flex-grow-1"
+                        >
+                          <h6 class="text-gray-color text-center flex-grow-1">
+                            سبت-خميس 10:00 AM - 3:00 PM 4:00 PM - 10:00 PM يوم
+                            الجمعة من 2:00 م إلى 10:00 م
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0 mt-1 mt-lg-3">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">
+                          المسؤول الثاني بالفرع
+                        </h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">اياس أبو صقر</h6>
+                              <h6 class="mb-0">0786900210</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">ساره كبوشي</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 separated-info-col">
+                            <div
+                              class="separated-info d-flex align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">محمد اسعد</h6>
+                              <h6 class="mb-0">0795933545</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info bottom-card-info">
+                        <h5 class="text-primary-color text-center">الخدمات</h5>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div class="row g-4">
+                          <div class="col-12 separated-info-col">
+                            <div
+                              class="separated-info d-flex justify-content-center align-items-center flex-wrap"
+                            >
+                              <h6 class="mb-0">مصفات للسيارت</h6>
+                              <h6 class="mb-0">خدمات إسكان بلس</h6>
+                              <h6 class="mb-0">منحدرات - رامبات صناديق الأمانات</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3"
+                >
+                  <div class="rows-info d-flex align-items-center">
+                    <h6
+                      class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color"
+                    >
+                      <span class="pages-numbers mb-0">1-10 من 50</span>
+                      <span class="pages-number-text mb-0">
+                        <span>عدد الصفوف في الصفحة:</span>
+                        <div class="d-inline-block rows-select-wrapper">
+                          <select
+                            class="form-select rows-select"
+                            aria-label="عدد الصفوف في الصفحة"
+                          >
+                            <option value="10" selected>10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                          </select>
+                        </div>
+                      </span>
+                    </h6>
+                  </div>
+                  <!-- Start Pagination -->
+                  <div class="pagination-wrapper mt-4">
+                    <nav aria-label="Page">
+                      <ul
+                        class="pagination justify-content-start pagination-container px-0 mb-0"
+                      >
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle page-disabled"
+                            href="#"
+                            aria-label="Previous"
+                          >
+                            <picture>
+                              <img src="./assets/icons/CaretLeft.svg" alt="" />
+                            </picture>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">1</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">2</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">3</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">...</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">14</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle"
+                            href="#"
+                            aria-label="Next"
+                          >
+                            <picture>
+                              <img
+                                src="./assets/icons/CaretLeft.svg"
+                                alt=""
+                                class="caret-left-rotate"
+                              />
+                            </picture>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- End Pagination -->
+                </div>
+              </div>
+              <div
+                class="tab-pane radio-tab-pane atms-tab fade"
+                id="atms-tab"
+                role="tabpanel"
+                aria-labelledby="atms-tab"
+              >
+                <div class="filters-section radius-8 mb-3">
+                  <div class="row gx-0 gy-3 gx-lg-3 gy-lg-0 align-items-center">
+                    <div class="col-lg-4">
+                      <div class="search-wrapper">
+                        <input
+                          type="text"
+                          class="form-control search-input radius-8"
+                          placeholder="البحث عن طريق الكلمات الرئيسية"
+                          aria-label="البحث عن طريق الكلمات الرئيسية"
+                        />
+                        <span class="search-icon">
+                          <picture>
+                            <img src="./assets/icons/Search_alt.svg" alt="" />
+                          </picture>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <select class="form-select filter-select-input radius-8">
+                        <option value="المدينة" selected>المدينة</option>
+                        <option value="">عمان</option>
+                        <option value="">إربد</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3">
+                      <select class="form-select filter-select-input radius-8">
+                        <option value="الخدمات" selected>الخدمات</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-2">
+                      <button class="btn reset-btn text-gray-color">
+                        <h6 class="d-inline">إعادة تعيين</h6>
+                        <picture>
+                          <img src="./assets/icons/Refresh_2.svg" alt="" />
+                        </picture>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div class="atm-card-title text-primary-color">
+                      <h2 class="mb-1">المجمع التجاري 1</h2>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>خط العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span
+                          >الموقع:
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الصراف: T002</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>الفرع التابع له الصراف: فرع المجمع التجاري</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>العنوان: عمان - شارع الملك حسين– بناية رقم 33</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="atm-card-services radius-8 mt-3">
+                    <div class="atm-card-services-header">
+                      <h4 class="text-primary-color mb-0">الخدمات</h4>
+                    </div>
+                    <div class="atm-card-services-body">
+                      <div class="cms-content">
+                        <blockquote>
+                          <ul>
+                            <li>تغيير الرقم السري الخاص بالبطاقة</li>
+                            <li>
+                              الإيداع / السحب من خلال البطاقة أو السحب
+                              اللاتلامسي عن طريق الهاتف
+                            </li>
+                            <li>طلب قرض شخصي/بطاقات ائتمانية/دفتر شيكات</li>
+                            <li>خدمات كشف الحساب</li>
+                            <li>استخدام البطاقة اللاتلامسية</li>
+                            <li>خدمات المحافظ الإلكترونية</li>
+                            <li>خدمات التحويل داخل البنك</li>
+                            <li>إيداع الشيكات</li>
+                            <li>خدمات صراف آلي بدون بطاقة</li>
+                            <li>
+                              اختيار فئات النقد بعملة الدينار الأردني عند السحب
+                            </li>
+                            <li>تحويل الكوينز إلى كاش</li>
+                          </ul>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div class="atm-card-title text-primary-color">
+                      <h2 class="mb-1">المجمع التجاري 1</h2>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>خط العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span
+                          >الموقع:
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الصراف: T002</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>الفرع التابع له الصراف: فرع المجمع التجاري</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>العنوان: عمان - شارع الملك حسين– بناية رقم 33</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="atm-card-services radius-8 mt-3">
+                    <div class="atm-card-services-header">
+                      <h4 class="text-primary-color mb-0">الخدمات</h4>
+                    </div>
+                    <div class="atm-card-services-body">
+                      <div class="cms-content">
+                        <blockquote>
+                          <ul>
+                            <li>تغيير الرقم السري الخاص بالبطاقة</li>
+                            <li>
+                              الإيداع / السحب من خلال البطاقة أو السحب
+                              اللاتلامسي عن طريق الهاتف
+                            </li>
+                            <li>طلب قرض شخصي/بطاقات ائتمانية/دفتر شيكات</li>
+                            <li>خدمات كشف الحساب</li>
+                            <li>استخدام البطاقة اللاتلامسية</li>
+                            <li>خدمات المحافظ الإلكترونية</li>
+                            <li>خدمات التحويل داخل البنك</li>
+                            <li>إيداع الشيكات</li>
+                            <li>خدمات صراف آلي بدون بطاقة</li>
+                            <li>
+                              اختيار فئات النقد بعملة الدينار الأردني عند السحب
+                            </li>
+                            <li>تحويل الكوينز إلى كاش</li>
+                          </ul>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div class="atm-card-title text-primary-color">
+                      <h2 class="mb-1">المجمع التجاري 1</h2>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>خط العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span
+                          >الموقع:
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الصراف: T002</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>الفرع التابع له الصراف: فرع المجمع التجاري</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>العنوان: عمان - شارع الملك حسين– بناية رقم 33</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="atm-card-services radius-8 mt-3">
+                    <div class="atm-card-services-header">
+                      <h4 class="text-primary-color mb-0">الخدمات</h4>
+                    </div>
+                    <div class="atm-card-services-body">
+                      <div class="cms-content">
+                        <blockquote>
+                          <ul>
+                            <li>تغيير الرقم السري الخاص بالبطاقة</li>
+                            <li>
+                              الإيداع / السحب من خلال البطاقة أو السحب
+                              اللاتلامسي عن طريق الهاتف
+                            </li>
+                            <li>طلب قرض شخصي/بطاقات ائتمانية/دفتر شيكات</li>
+                            <li>خدمات كشف الحساب</li>
+                            <li>استخدام البطاقة اللاتلامسية</li>
+                            <li>خدمات المحافظ الإلكترونية</li>
+                            <li>خدمات التحويل داخل البنك</li>
+                            <li>إيداع الشيكات</li>
+                            <li>خدمات صراف آلي بدون بطاقة</li>
+                            <li>
+                              اختيار فئات النقد بعملة الدينار الأردني عند السحب
+                            </li>
+                            <li>تحويل الكوينز إلى كاش</li>
+                          </ul>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="atm-card radius-8 mt-4">
+                  <div
+                    class="atm-card-header d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3"
+                  >
+                    <div class="atm-card-title text-primary-color">
+                      <h2 class="mb-1">المجمع التجاري 1</h2>
+                    </div>
+                    <div class="atm-card-location text-end">
+                      <h6
+                        class="mb-0 atm-card-coordinates d-flex align-items-center flex-wrap"
+                      >
+                        <span>خط العرض: 31.9801</span>
+                        <span>خط الطول: 35.837</span>
+                        <span
+                          >الموقع:
+                          <a href="#" class="atm-card-map-link">
+                            <h6 class="d-inline-flex">
+                              انقر هنا للذهاب للموقع
+                            </h6>
+                          </a></span
+                        >
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row gx-0 gx-lg-4 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>رمز الصراف: T002</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>الفرع التابع له الصراف: فرع المجمع التجاري</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="atm-card-info">
+                        <h6>المدينة: عمان</h6>
+                        <div class="atm-card-info-divider mb-2"></div>
+                        <div
+                          class="d-flex justify-content-between align-items-center gap-2 flex-wrap"
+                        >
+                          <h6>العنوان: عمان - شارع الملك حسين– بناية رقم 33</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="atm-card-services radius-8 mt-3">
+                    <div class="atm-card-services-header">
+                      <h4 class="text-primary-color mb-0">الخدمات</h4>
+                    </div>
+                    <div class="atm-card-services-body">
+                      <div class="cms-content">
+                        <blockquote>
+                          <ul>
+                            <li>تغيير الرقم السري الخاص بالبطاقة</li>
+                            <li>
+                              الإيداع / السحب من خلال البطاقة أو السحب
+                              اللاتلامسي عن طريق الهاتف
+                            </li>
+                            <li>طلب قرض شخصي/بطاقات ائتمانية/دفتر شيكات</li>
+                            <li>خدمات كشف الحساب</li>
+                            <li>استخدام البطاقة اللاتلامسية</li>
+                            <li>خدمات المحافظ الإلكترونية</li>
+                            <li>خدمات التحويل داخل البنك</li>
+                            <li>إيداع الشيكات</li>
+                            <li>خدمات صراف آلي بدون بطاقة</li>
+                            <li>
+                              اختيار فئات النقد بعملة الدينار الأردني عند السحب
+                            </li>
+                            <li>تحويل الكوينز إلى كاش</li>
+                          </ul>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3"
+                >
+                  <div class="rows-info d-flex align-items-center">
+                    <h6
+                      class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color"
+                    >
+                      <span class="pages-numbers mb-0">1-10 من 50</span>
+                      <span class="pages-number-text mb-0">
+                        <span>عدد الصفوف في الصفحة:</span>
+                        <div class="d-inline-block rows-select-wrapper">
+                          <select
+                            class="form-select rows-select"
+                            aria-label="عدد الصفوف في الصفحة"
+                          >
+                            <option value="10" selected>10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                          </select>
+                        </div>
+                      </span>
+                    </h6>
+                  </div>
+                  <!-- Start Pagination -->
+                  <div class="pagination-wrapper mt-4">
+                    <nav aria-label="Page">
+                      <ul
+                        class="pagination justify-content-start pagination-container px-0 mb-0"
+                      >
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle page-disabled"
+                            href="#"
+                            aria-label="Previous"
+                          >
+                            <picture>
+                              <img src="./assets/icons/CaretLeft.svg" alt="" />
+                            </picture>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">1</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">2</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">3</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">...</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">14</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle"
+                            href="#"
+                            aria-label="Next"
+                          >
+                            <picture>
+                              <img
+                                src="./assets/icons/CaretLeft.svg"
+                                alt=""
+                                class="caret-left-rotate"
+                              />
+                            </picture>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- End Pagination -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Branches & Atms Network Section End -->
+
+    <script>
+      // Custom tab radio switching logic for tab panes using jQuery
+      $(document).ready(function () {
+        function activateTabPane($radio) {
+          var target = $radio.data("bs-target");
+          $(".radio-tab-pane").removeClass("show active");
+          if (target) {
+            $(target).addClass("show active");
+          }
+        }
+
+        // On radio change
+        $(".tab-radio-input").on("change", function () {
+          if ($(this).is(":checked")) {
+            activateTabPane($(this));
+          }
+        });
+
+        // On page load, ensure only the checked radio's pane is active
+        var $checkedRadio = $(".tab-radio-input:checked");
+        if ($checkedRadio.length) {
+          activateTabPane($checkedRadio);
+        }
+      });
+    </script>
+  </body>
+</html>
