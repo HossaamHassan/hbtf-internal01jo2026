@@ -1,259 +1,9 @@
-/* Global */
-/* Additional Colors variables */
-:root {
-  --primary-color-op-95: rgb(89 92 163 / 95%);
-  --primary-color-op-70: rgb(89 92 163 / 70%);
-  --primary-color-op-50: rgb(89 92 163 / 50%);
-  --primary-color-op-40: rgb(89 92 163 / 40%);
-  --gray-color-op-50: rgb(87 87 86 / 50%);
-  --gray-color-op-30: rgb(87 87 86 / 30%);
-  --gray-color-op-25: rgb(87 87 86 / 25%);
-  --green-color: #008000;
-  --red-color: #ff0000;
-  --red-color-op-25: rgb(255 0 0 / 25%);
-  --radius-full: 999px;
-}
-
-/* Global classes */
-.bg-primary-color-op-20 {
-  background-color: rgb(89 92 163 / 10%) !important;
-}
-
-.radius-6 {
-  border-radius: 6px !important;
-}
-
-.radius-8 {
-  border-radius: 8px !important;
-}
-
-/* Global classes */
-
-.primary-btn {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border: none;
-  padding: 0.85rem 1.6rem;
-  border-radius: var(--radius-full);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background-color 0.3s ease;
-}
-
-.primary-btn span {
-  font-size: unset;
-  font-weight: unset;
-}
-
-.primary-btn picture img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-    hue-rotate(91deg) brightness(102%) contrast(105%);
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.primary-btn:hover,
-.primary-btn:focus {
-  background-color: var(--primary-color-op-95);
-}
-
-/* Hero Section */
-.hero-section {
-  padding: 1.9rem 0;
-}
-
-/* Hero Section */
-
-/* Pagination */
-.pagination-wrapper {
-  padding-bottom: 1rem;
-}
-
-.pagination-wrapper .pagination {
-  gap: 12px !important;
-}
-
-.pagination-container .page-item {
-  width: 40px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  aspect-ratio: 1;
-  transition: all 0.3s ease-out;
-}
-
-.pagination-container .page-item .page-link {
-  padding: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  width: max-content;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  outline: none;
-  border: 1px solid var(--gray-color-op-25);
-  background: transparent;
-  color: var(--primary-color);
-  transition: all 0.2s ease-out;
-  border-radius: 50%;
-}
-
-.pagination-container .page-item .page-link:hover {
-  border-color: var(--primary-color);
-  border-width: 2px;
-  background-color: var(--white-color);
-}
-
-.pagination-container .page-item,
-.pagination-container .page-item.active {
-  position: relative;
-}
-
-.pagination-container .page-item .page-link .caret-left-rotate {
-  transform: rotate(180deg);
-}
-
-.pagination-container .page-item.active .page-link {
-  border-color: var(--primary-color);
-  border-width: 2px;
-  background-color: var(--white-color);
-}
-
-.arabic-version
-  .pagination-container
-  .page-item:not(:first-child):not(:last-child):hover::before,
-.arabic-version .pagination-container .page-item::before {
-  inset-inline-start: 0;
-}
-
-.arabic-version .pagination-container .page-item:last-of-type .page-link,
-.arabic-version .pagination-container .page-item:nth-child(1) .page-link {
-  transform: scale(-1);
-}
-
-.pagination-container .page-item:nth-child(1) .page-link,
-.pagination-container .page-item:last-of-type .page-link {
-  background-color: var(--primary-color);
-  border-color: transparent;
-  color: var(--white-color);
-}
-
-.pagination-container .page-item:nth-child(1) .page-link:hover,
-.pagination-container .page-item:last-of-type .page-link:hover {
-  background: var(--primary-color-op-95);
-}
-
-.pagination-container .page-item:last-of-type .page-link {
-  color: var(--white-color);
-}
-
-.pagination-container .page-item .page-link.page-disabled {
-  background-color: rgba(89 92 163 / 50%);
-  pointer-events: none;
-}
-
-@media (max-width: 575px) {
-  .pagination-container .page-item .page-link {
-    width: 2.8rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .pagination-container {
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 575.8889px) {
-  .pagination-container .page-item:nth-child(3),
-  .pagination-container .page-item:nth-child(4) {
-    display: none;
-  }
-}
-
-/* Pagination */
-
-/* Rows per page + info (under table) */
-.rows-info {
-  font-size: 0.85rem;
-}
-.rows-info h6 span {
-  color: var(--gray-color);
-  font-size: unset;
-  font-weight: unset;
-}
-
-.rows-info .pages-numbers {
-  border-inline-end: 1px solid var(--gray-color);
-  padding-inline-end: 0.65rem;
-}
-.rows-info .pages-number-text {
-  padding-inline-start: 0.65rem;
-}
-.rows-select {
-  padding-inline-start: 0.25rem !important;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--gray-color);
-  background-color: transparent;
-  background-image: url("../assets/icons/Arrow_drop_left.svg");
-  background-position: left 0.65rem center;
-  background-size: 1.5rem;
-}
-
-.rows-select:focus {
-  box-shadow: none;
-  border: none;
-  outline: none;
-}
-
-/* Cms Content */
-.cms-content ul {
-  column-count: 3;
-  column-gap: 2.5rem;
-  margin-bottom: 0;
-  padding-inline-start: 2.1rem;
-}
-
-.cms-content ul li {
-  list-style: disc;
-  color: var(--gray-color);
-}
-
-.cms-content ul li::marker {
-  color: var(--gray-color) !important;
-  font-size: 0.7rem;
-}
-
-@media (max-width: 991.98px) {
-  .cms-content ul {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .cms-content ul {
-    column-count: 1;
-  }
-}
-
-/* Cms Content */
-
-/* Global */
-
 /* Branches & Atms Section */
 
 /* Countries Tabs Styling */
 .branches-atms-network-section .countries-tabs-container {
-  border-top: 1px solid var(--gray-color-op-30);
-  border-bottom: 1px solid var(--gray-color-op-30);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   margin-bottom: 1.9rem;
   background-color: var(--white-color);
 }
@@ -349,10 +99,6 @@
   background-color: var(--green-color);
 }
 
-.branches-atms-network-section .countries-tab-content .primary-btn:hover {
-  background-color: rgb(0 128 00 / 95%);
-}
-
 .branches-atms-network-section .countries-tab-content .tab-radio-group {
   margin-inline: auto;
 }
@@ -387,7 +133,7 @@
   padding-inline-start: 2.2rem;
   padding-inline-end: 1rem;
   padding-block: 13px !important;
-  outline: 1px solid var(--gray-color-op-25) !important;
+  outline: 1px solid;
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--primary-color) !important;
@@ -398,7 +144,7 @@
   .inner-countries-tab-content
   .filters-section
   .search-input::placeholder {
-  color: var(--gray-color-op-50) !important;
+  color: rgb(87 87 86 / 50%) !important;
 }
 
 .branches-atms-network-section
@@ -426,7 +172,7 @@
 /* details card */
 .branches-atms-network-section .inner-countries-tab-content .atm-card {
   background-color: var(--white-color);
-  border: 1px solid var(--gray-color-op-30);
+  border: 1px solid;
   padding: 1.2rem 1rem;
 }
 
@@ -472,11 +218,10 @@
   .atm-card-info-divider {
   width: 100%;
   height: 1px;
-  background-color: var(--primary-color-op-50);
 }
 
 .branches-atms-network-section .inner-countries-tab-content .atm-card-services {
-  border: 1px solid var(--primary-color-op-40);
+  border: 1px solid;
   background-color: rgb(241 243 245 / 60%);
   padding-bottom: 0.9rem;
 }
@@ -484,7 +229,7 @@
 .branches-atms-network-section
   .inner-countries-tab-content
   .atm-card-services-header {
-  border-bottom: 1px solid var(--primary-color-op-50);
+  border-bottom: 1px solid;
   padding: 0.6rem 1.1rem;
   margin-bottom: 0.9rem;
 }
@@ -518,7 +263,6 @@
   .atm-card
   .atm-card-title
   .alert-badge {
-  background-color: var(--red-color-op-25);
   border: 1px solid var(--red-color);
   padding: 0.2rem 0.5rem;
 }
@@ -551,7 +295,7 @@
   .branches-tab
   .atm-card
   .branch-card-info {
-  border: 1px solid var(--primary-color-op-40);
+  border: 1px solid;
   background-color: rgb(241 243 245 / 60%);
   padding: 0.25rem 0.8rem 0.9rem 0.8rem;
 }
@@ -562,7 +306,7 @@
   .atm-card
   .branch-card-info
   .branch-card-info-header {
-  border-bottom: 1px solid var(--primary-color-op-50);
+  border-bottom: 1px solid;
   padding: 0.6rem 0;
   margin-bottom: 0.8rem;
   text-align: center;
@@ -612,3 +356,38 @@
   .separated-info {
   justify-content: center;
 }
+
+
+/* Start Cms Content */
+.cms-content ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  margin-bottom: 0;
+  padding-inline-start: 2.1rem;
+}
+
+.cms-content ul li {
+  list-style: disc;
+  color: var(--gray-color);
+}
+
+.cms-content ul li::marker {
+  color: var(--gray-color) !important;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 991.98px) {
+  .cms-content ul {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cms-content ul {
+    column-count: 1;
+  }
+}
+
+/* End Cms Content */
