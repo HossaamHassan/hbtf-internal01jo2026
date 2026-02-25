@@ -1,0 +1,58 @@
+/* Forms Questionnaires Section */
+.forms-questionnaires-section .search-wrapper {
+  position: relative;
+}
+
+.forms-questionnaires-section .search-input {
+  padding-inline-start: 2.2rem;
+  padding-inline-end: 1rem;
+  padding-block: 13px !important;
+  outline: 1px solid;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color) !important;
+  min-width: 265px;
+}
+
+.forms-questionnaires-section .search-input::placeholder {
+  color: rgb(87 87 86 / 50%) !important;
+}
+
+.forms-questionnaires-section .search-icon {
+  position: absolute;
+  inset-inline-start: 0.85rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.forms-questionnaires-section .form-card {
+    padding: 0.7rem;
+    padding-inline-end: 1.5rem;
+    background-color: var(--white-color);
+}
+
+.forms-questionnaires-section .form-card .card-content .card-icon-container {
+    background-color: rgb(89 92 163 / 15%);
+    padding: 0.7rem 0.6rem;
+    border: 1px solid var(--primary-color);
+}
+
+.forms-questionnaires-section .form-card .card-content .card-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+}
+
+@media (max-width:575.98px) {
+    .forms-questionnaires-section .form-card .primary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.forms-questionnaires-section .ads-section .ads-section-container {
+    min-height: 600px;
+}
+/* Forms Questionnaires Section */

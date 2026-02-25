@@ -371,6 +371,7 @@
 .cms-content ul li {
   list-style: disc;
   color: var(--gray-color);
+  text-align: start;
 }
 
 .cms-content ul li::marker {
@@ -378,16 +379,20 @@
   font-size: 0.7rem;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .cms-content ul {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 767.98px) {
   .cms-content ul {
-    column-count: 1;
+    grid-template-columns: 1fr;
   }
+}
+
+.filter-white {
+  filter: var(--filter-white);
 }
 
 /* End Cms Content */

@@ -1,0 +1,164 @@
+/* Circular Section */
+.circular-section .search-wrapper {
+  position: relative;
+}
+
+.circular-section .search-input {
+  padding-inline-start: 2.2rem;
+  padding-inline-end: 1rem;
+  padding-block: 13px !important;
+  outline: 1px solid;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color) !important;
+  min-width: 265px;
+}
+
+.circular-section .search-input::placeholder {
+  color: rgb(87 87 86 / 50%) !important;
+}
+
+.circular-section .search-icon {
+  position: absolute;
+  inset-inline-start: 0.85rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+/* Tabs override (no horizontal scroll) */
+.circular-section .albums-tabs {
+  overflow-x: visible !important;
+}
+
+/* Preserve rounded corners on albums-tabs */
+.circular-section .albums-tabs .nav-item:first-child .nav-link {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.circular-section .albums-tabs .nav-item:last-child .nav-link {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.circular-section .albums-tabs .nav-item:first-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.circular-section .albums-tabs .nav-item:last-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Customize Dropdown tabs */
+.circular-section .albums-tabs .nav-item.dropdown .dropdown-item {
+    color: var(--gray-color);
+}
+
+.circular-section .albums-tabs .nav-item.dropdown .dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.circular-section .albums-tabs .nav-item.dropdown .dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../assets/icons/Arrow_drop_left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border: none !important;
+  vertical-align: middle;
+}
+/* table */
+.circular-section .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid;
+}
+
+.circular-section .table thead th {
+  color: var(--white-color) !important;
+  background-color: var(--primary-color);
+  border-inline-end: 1px solid rgb(255 255 255 / 25%) !important;
+  padding-inline: 1rem;
+  padding-block: 12px;
+  text-wrap: nowrap;
+}
+
+.circular-section .table thead th:last-child {
+  border-inline-end: none;
+}
+
+.circular-section .table .sort-wrapper picture img {
+  cursor: pointer;
+  filter: var(--filter-white);
+}
+
+.circular-section .table tbody tr td {
+  border-bottom: 1px solid;
+  border-inline-end: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
+}
+
+.circular-section .table tbody tr:first-child td:first-child {
+  position: relative;
+}
+
+.circular-section .table tbody tr:first-child td:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  background-color: var(--pink-color);
+  width: 6px;
+  height: 100%;
+}
+
+.circular-section .table tbody tr:first-child td:first-child h5 span {
+  font-size: unset;
+  font-weight: unset;
+}
+
+.circular-section .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.circular-section .table tbody tr td:last-child {
+  border-inline-end: none;
+}
+
+.circular-section .name-col {
+  white-space: nowrap;
+}
+
+.circular-section .table th:last-child,
+.circular-section .table td:last-child {
+  width: 15%;
+  white-space: nowrap;
+}
+
+@media (min-width: 1399.98px) {
+  .circular-section .table tbody tr td:first-child {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .circular-section .table tbody tr td:first-child {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .circular-section .table tbody tr td:first-child {
+    min-width: auto;
+  }
+}
+/* Circular Section */

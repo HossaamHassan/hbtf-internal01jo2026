@@ -1,0 +1,126 @@
+/* Apps Links Section */
+.apps-links-section .search-wrapper {
+  position: relative;
+}
+
+.apps-links-section .search-input {
+  padding-inline-start: 2.2rem;
+  padding-inline-end: 1rem;
+  padding-block: 13px !important;
+  outline: 1px solid;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color) !important;
+  min-width: 265px;
+}
+
+.apps-links-section .search-input::placeholder {
+  color: rgb(87 87 86 / 50%) !important;
+}
+
+.apps-links-section .search-icon {
+  position: absolute;
+  inset-inline-start: 0.85rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+/* Tabs override (no horizontal scroll) */
+.apps-links-section .albums-tabs {
+  overflow-x: visible !important;
+}
+
+/* Preserve rounded corners on albums-tabs */
+.apps-links-section .albums-tabs .nav-item:first-child .nav-link {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.apps-links-section .albums-tabs .nav-item:last-child .nav-link {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.apps-links-section .albums-tabs .nav-item:first-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.apps-links-section .albums-tabs .nav-item:last-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Customize Dropdown tabs */
+.apps-links-section .albums-tabs .nav-item.dropdown .dropdown-item {
+  color: var(--gray-color);
+}
+
+.apps-links-section .albums-tabs .nav-item.dropdown .dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+}
+
+.apps-links-section .albums-tabs .nav-item.dropdown .dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../assets/icons/Arrow_drop_left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border: none !important;
+  vertical-align: middle;
+}
+/* table */
+.apps-links-section .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid;
+}
+
+.apps-links-section .table tbody tr td {
+  border-bottom: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
+}
+
+.apps-links-section .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.apps-links-section .apps-links-table .primary-btn picture img {
+  filter: var(--filter-white);
+}
+
+.apps-links-section .apps-links-table .primary-outline-btn,
+.apps-links-section .apps-links-table .gray-outline-btn,
+.apps-links-section .apps-links-table .secondary-outline-btn {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apps-links-section .apps-links-table .gray-outline-btn {
+    border-color: var(--gray-color);
+    color: var(--gray-color);
+}
+
+.apps-links-section .apps-links-table .secondary-outline-btn {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.apps-links-section .apps-links-table .primary-outline-btn picture img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(9%) saturate(2890%)
+    hue-rotate(200deg) brightness(91%) contrast(89%);
+}
+/* Apps Links Section */

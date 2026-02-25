@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/circular.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>التعاميم</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">التعاميم</h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Circular Section Start -->
+    <section class="circular-section py-4">
+      <div class="container">
+        <div class="filters-section radius-8 mb-3">
+          <div class="row gx-0 gy-3 gx-lg-3 gy-lg-0 align-items-center">
+            <div class="col-lg-4">
+              <div class="search-wrapper">
+                <input
+                  type="text"
+                  class="form-control search-input outline-gray-color-op-25 radius-8"
+                  placeholder="البحث عن طريق الكلمات الرئيسية"
+                  aria-label="البحث عن طريق الكلمات الرئيسية"
+                />
+                <span class="search-icon">
+                  <picture>
+                    <img src="./assets/icons/Search_alt.svg" alt="" />
+                  </picture>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-select filter-select-input radius-8">
+                <option value="اختر السنة" selected>اختر السنة</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+              <div class="d-flex justify-content-end">
+                <a href="#" class="secondary-btn w-fit">
+                  إعادة تعيين
+                  <picture>
+                    <img src="./assets/icons/Refresh_2.svg" alt="" />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="nav nav-tabs mx-0 albums-tabs border w-fit radius-5 px-0 m-auto"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link border-0 rounded-0 px-5"
+              id="all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="all-tab-pane"
+              aria-selected="true"
+            >
+              الكل
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 active px-5"
+              id="hr-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#hr-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="hr-tab-pane"
+              aria-selected="false"
+            >
+              الموارد البشرية
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5"
+              id="branches-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#branches-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="branches-tab-pane"
+              aria-selected="false"
+            >
+              الفروع
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5"
+              id="business-sector-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#business-sector-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="business-sector-tab-pane"
+              aria-selected="false"
+            >
+              قطاع الأعمال
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5"
+              id="operations-sector-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#operations-sector-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="operations-sector-tab-pane"
+              aria-selected="false"
+            >
+              قطاع العمليات
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5"
+              id="credit-management-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#credit-management-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="credit-management-tab-pane"
+              aria-selected="false"
+            >
+              إدارة الائتمان
+            </button>
+          </li>
+          <li class="nav-item bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5"
+              id="specialized-company-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#specialized-company-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="specialized-company-tab-pane"
+              aria-selected="false"
+            >
+              الشركة المتخصصة
+            </button>
+          </li>
+          <li class="nav-item dropdown bg-white" role="presentation">
+            <button
+              class="nav-link rounded-0 px-5 dropdown-toggle"
+              id="more-tab"
+              data-bs-toggle="dropdown"
+              type="button"
+              role="button"
+              aria-expanded="false"
+            >
+              اكثر
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="more-tab">
+              <li>
+                <button
+                  class="dropdown-item"
+                  id="operations-sector-dropdown-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#operations-sector-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="operations-sector-tab-pane"
+                  aria-selected="false"
+                >
+                  قطاع العمليات
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  id="credit-management-dropdown-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#credit-management-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="credit-management-tab-pane"
+                  aria-selected="false"
+                >
+                  إدارة الائتمان
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  id="specialized-company-dropdown-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#specialized-company-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="specialized-company-tab-pane"
+                  aria-selected="false"
+                >
+                  الشركة المتخصصة
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade"
+            id="all-tab-pane"
+            role="tabpanel"
+            aria-labelledby="all-tab"
+            tabindex="0"
+          >
+            <div
+              class="table-wrapper border-gray-color-op-25 mt-4 radius-8 overflow-y-hidden"
+            >
+              <table class="table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">موضوع التعميم</h5>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">إسم المصدر</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">رقم التعميم</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">تاريخ المذكرة</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">الامر</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        <span>موضوع التعميم هنا</span>
+                        <span class="text-pink-color">(اليوم)</span>
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        الابتكار وتطوير الاعمال والمنتجات
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-md-0 mt-3"
+            >
+              <div class="rows-info d-flex align-items-center">
+                <h6
+                  class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color"
+                >
+                  <span class="pages-numbers mb-0">1-10 من 50</span>
+                  <span class="pages-number-text mb-0">
+                    <span>عدد الصفوف في الصفحة:</span>
+                    <div class="d-inline-block rows-select-wrapper">
+                      <select
+                        class="form-select rows-select"
+                        aria-label="عدد الصفوف في الصفحة"
+                      >
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                      </select>
+                    </div>
+                  </span>
+                </h6>
+              </div>
+              <!-- Start Pagination -->
+              <div class="pagination-wrapper mt-4">
+                <nav aria-label="Page">
+                  <ul
+                    class="pagination justify-content-start pagination-container px-0 mb-0"
+                  >
+                    <li class="page-item">
+                      <a
+                        class="page-link rounded-circle page-disabled"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <picture>
+                          <img src="./assets/icons/CaretLeft.svg" alt="" />
+                        </picture>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">1</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">2</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">3</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">...</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">14</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link rounded-circle"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <picture>
+                          <img
+                            src="./assets/icons/CaretLeft.svg"
+                            alt=""
+                            class="caret-left-rotate"
+                          />
+                        </picture>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- End Pagination -->
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="hr-tab-pane"
+            role="tabpanel"
+            aria-labelledby="hr-tab"
+            tabindex="0"
+          >
+            <div
+              class="table-wrapper border-gray-color-op-25 mt-4 radius-8 overflow-y-hidden"
+            >
+              <table class="table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">موضوع التعميم</h5>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">رقم التعميم</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">تاريخ المذكرة</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="col-name border-gray-color-op-25">
+                      <div
+                        class="d-flex justify-content-between align-items-center gap-3"
+                      >
+                        <h5 class="mb-0">الامر</h5>
+                        <div class="sort-wrapper">
+                          <picture>
+                            <img
+                              src="./assets/icons/Up - Down arrow.svg"
+                              alt=""
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">
+                        <span>موضوع التعميم هنا</span>
+                        <span class="text-pink-color">(اليوم)</span>
+                      </h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">موضوع التعميم هنا</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">213</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <h5 class="text-gray-color mb-0">02/10/2025</h5>
+                    </td>
+                    <td class="name-col border-gray-color-op-25">
+                      <a href="#" class="primary-btn w-fit mx-auto">
+                        <span>عرض</span>
+                        <picture>
+                          <img src="./assets/icons/PDF.svg" alt="" />
+                        </picture>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-md-0 mt-3"
+            >
+              <div class="rows-info d-flex align-items-center">
+                <h6
+                  class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color"
+                >
+                  <span class="pages-numbers mb-0">1-10 من 50</span>
+                  <span class="pages-number-text mb-0">
+                    <span>عدد الصفوف في الصفحة:</span>
+                    <div class="d-inline-block rows-select-wrapper">
+                      <select
+                        class="form-select rows-select"
+                        aria-label="عدد الصفوف في الصفحة"
+                      >
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                      </select>
+                    </div>
+                  </span>
+                </h6>
+              </div>
+              <!-- Start Pagination -->
+              <div class="pagination-wrapper mt-4">
+                <nav aria-label="Page">
+                  <ul
+                    class="pagination justify-content-start pagination-container px-0 mb-0"
+                  >
+                    <li class="page-item">
+                      <a
+                        class="page-link rounded-circle page-disabled"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <picture>
+                          <img src="./assets/icons/CaretLeft.svg" alt="" />
+                        </picture>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">1</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">2</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">3</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">...</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <h5 class="mb-0">14</h5>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link rounded-circle"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <picture>
+                          <img
+                            src="./assets/icons/CaretLeft.svg"
+                            alt=""
+                            class="caret-left-rotate"
+                          />
+                        </picture>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- End Pagination -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Circular Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+        <h6 class="m-0 text-center text-white py-2">
+            النص هنا
+        </h6>
+    </footer>
+    <!-- Start Footer Content -->
+  </body>
+</html>
