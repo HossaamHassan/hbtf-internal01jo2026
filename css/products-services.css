@@ -1,0 +1,81 @@
+/* Products & Services Section Start */
+.products-services-section .search-wrapper {
+    position: relative;
+}
+
+.products-services-section .search-input {
+    padding-inline-start: 2.2rem;
+    padding-inline-end: 1rem;
+    padding-block: 13px !important;
+    outline: 1px solid;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    min-width: 265px;
+}
+
+.products-services-section .search-input::placeholder {
+    color: rgb(87 87 86 / 50%) !important;
+}
+
+.products-services-section .search-icon {
+    position: absolute;
+    inset-inline-start: 0.85rem;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Custom radio for all browsers using pseudo-elements */
+.products-services-section .tab-radio-item .tab-radio-input[type="radio"]:checked {
+    border-color: var(--primary-color);
+}
+
+.products-services-section .tab-radio-item .tab-radio-input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--gray-color);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.products-services-section .tab-radio-item .tab-radio-input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.65rem;
+    height: 0.65rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products-services-section .tab-radio-item {
+    cursor: pointer;
+}
+
+.products-services-section .tab-radio-item h5 {
+    color: var(--gray-color);
+}
+
+.products-services-section .debit-card-container {
+    padding: 1.25rem;
+}
+
+.products-services-section .additional-space-container {
+    padding: 2.1rem 1.75rem;
+    border: 1px solid rgb(87 87 86 / 40%);
+    background-color: rgb(255 255 255 / 50%);
+}
+
+.products-services-section hr {
+    background-color: rgb(87 87 86 / 25%);
+}
+/* Products & Services Section End */

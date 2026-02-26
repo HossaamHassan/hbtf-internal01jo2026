@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/products-services.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>المنتجات والحملات للأفراد</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">المنتجات والحملات للأفراد</h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Products & Services Section Start -->
+    <section class="products-services-section pt-3 pb-5">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-3">
+            <h4 class="mb-3">النوع</h4>
+            <!-- Custom Tab Navigation (Radio Style) -->
+            <div
+              class="tab-radio-group d-flex flex-column gap-2 mb-3"
+              id="tabPanesNav"
+              role="tablist"
+            >
+              <label
+                class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+              >
+                <input
+                  type="radio"
+                  class="tab-radio-input"
+                  name="tab-radio"
+                  id="programs-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#programs"
+                />
+                <h5 class="text-center mb-0">برامج</h5>
+              </label>
+              <label
+                class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+              >
+                <input
+                  type="radio"
+                  class="tab-radio-input"
+                  name="tab-radio"
+                  id="loans-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loans"
+                  checked
+                />
+                <h5 class="text-center mb-0">القروض</h5>
+              </label>
+              <label
+                class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+              >
+                <input
+                  type="radio"
+                  class="tab-radio-input"
+                  name="tab-radio"
+                  id="accounts-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#accounts"
+                />
+                <h5 class="text-center mb-0">حسابات</h5>
+              </label>
+              <label
+                class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+              >
+                <input
+                  type="radio"
+                  class="tab-radio-input"
+                  name="tab-radio"
+                  id="cards-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#cards"
+                  checked
+                />
+                <h5 class="text-center mb-0">البطاقات</h5>
+              </label>
+              <label
+                class="tab-radio-item d-flex align-items-center gap-2 w-fit"
+              >
+                <input
+                  type="radio"
+                  class="tab-radio-input"
+                  name="tab-radio"
+                  id="electronic-services-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#electronic-services"
+                />
+                <h5 class="text-center mb-0">خدمات الكترونية</h5>
+              </label>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <!-- Tab Panes -->
+            <div class="tab-content" id="typeTabPanesContent">
+              <div
+                class="tab-pane radio-tab-pane fade active show"
+                id="cards"
+                role="tabpanel"
+                aria-labelledby="cards-tab"
+              >
+                <ul
+                  class="nav nav-tabs mx-0 albums-tabs border w-fit radius-5 px-0 overflow-hidden"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item bg-white" role="presentation">
+                    <button
+                      class="nav-link border-0 rounded-0 active px-5"
+                      id="cards-products-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cards-products-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="cards-products-tab-pane"
+                      aria-selected="true"
+                    >
+                      منتجات البطاقات
+                    </button>
+                  </li>
+                  <li class="nav-item bg-white" role="presentation">
+                    <button
+                      class="nav-link rounded-0 px-5"
+                      id="cards-campaigns-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cards-campaigns-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="cards-campaigns-tab-pane"
+                      aria-selected="false"
+                    >
+                      حملات البطاقات
+                    </button>
+                  </li>
+                  <li class="nav-item bg-white" role="presentation">
+                    <button
+                      class="nav-link rounded-0 px-5"
+                      id="cards-services-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cards-services-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="cards-services-tab-pane"
+                      aria-selected="false"
+                    >
+                      خدمات البطاقات
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="tabPanesContent">
+                  <div
+                    class="tab-pane fade active show"
+                    id="cards-products-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="cards-products-tab-pane"
+                  >
+                    <div class="filters-section my-3">
+                      <div
+                        class="row gx-0 gy-3 gx-md-3 gy-md-0 align-items-center"
+                      >
+                        <div class="col-xl-4 col-lg-5 col-md-6">
+                          <div class="search-wrapper">
+                            <input
+                              type="text"
+                              class="form-control search-input outline-gray-color-op-25 radius-8"
+                              placeholder="البحث عن طريق الكلمات الرئيسية"
+                              aria-label="البحث عن طريق الكلمات الرئيسية"
+                            />
+                            <span class="search-icon">
+                              <picture>
+                                <img
+                                  src="./assets/icons/Search_alt.svg"
+                                  alt=""
+                                />
+                              </picture>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6">
+                          <select
+                            class="form-select filter-select-input radius-8"
+                            id="cardsFilterSelect"
+                          >
+                            <option value="direct-payment-cards" selected>
+                              بطاقات الدفع المباشر
+                            </option>
+                            <option value="credit-cards">
+                              البطاقات الائتمانية
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="cardsTabPanesContent">
+                      <div
+                        class="tab-pane fade active show"
+                        id="direct-payment-cards"
+                        role="tabpanel"
+                        aria-labelledby="direct-payment-cards-tab"
+                      >
+                        <div class="row g-4">
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 321.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة إسكان Youth
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 1000006707.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة إسكان Young
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 1000006709.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Edge الدفع المباشر
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 1000006709-2.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Visa إسكان بلس
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 1000006709-1.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Visa العادية
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/Frame 1000006710.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">Iskan Bracelet</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="credit-cards"
+                        role="tabpanel"
+                        aria-labelledby="credit-cards-tab"
+                      >
+                        <div class="row g-4">
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/بطاقة إسكان Youth.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة إسكان Youth
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/بطاقة إسكان Young.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة إسكان Young
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/بطاقة Edge الدفع المباشر.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Edge الدفع المباشر
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/بطاقة Visa إسكان بلس.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Visa إسكان بلس
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div
+                              class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                            >
+                              <picture>
+                                <img
+                                  src="./assets/images/bank-product/Cards/بطاقة Visa العادية.png"
+                                  alt=""
+                                  class="default-image-class"
+                                />
+                              </picture>
+                              <h5 class="text-center mb-0">
+                                بطاقة Visa العادية
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="additional-space-container radius-8 d-flex flex-column justify-content-center align-items-center gap-3 mt-4"
+                    >
+                      <h3 class="text-primary-color text-center mb-0">
+                        مساحة لإضافة نص اضافي
+                      </h3>
+                      <h5 class="text-center mb-0">
+                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع
+                        ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي
+                        منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة
+                        من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة
+                        دليل أو مرجع شكلي لهذه الأحرف.
+                      </h5>
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2 flex-wrap"
+                      >
+                        <a
+                          href="#"
+                          class="primary-btn flex-grow-1 justify-content-center"
+                        >
+                          زر رئيسي
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                        <a
+                          href="#"
+                          class="secondary-btn flex-grow-1 justify-content-center"
+                        >
+                          زر ثانوي
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="row g-4">
+                      <div class="col-lg-4 col-md-6">
+                        <div
+                          class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                        >
+                          <picture>
+                            <img
+                              src="./assets/images/bank-product/Frame 319-2.png"
+                              alt=""
+                              class="default-image-class"
+                            />
+                          </picture>
+                          <h5 class="text-center mb-0">Iskan Gain</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div
+                          class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                        >
+                          <picture>
+                            <img
+                              src="./assets/images/bank-product/Frame 319.png"
+                              alt=""
+                              class="default-image-class"
+                            />
+                          </picture>
+                          <h5 class="text-center mb-0">Iskan Coins</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div
+                          class="debit-card-container bg-white radius-8 d-flex flex-column justify-content-center align-items-center gap-3"
+                        >
+                          <picture>
+                            <img
+                              src="./assets/images/bank-product/Frame 319.png"
+                              alt=""
+                              class="default-image-class"
+                            />
+                          </picture>
+                          <h5 class="text-center mb-0">
+                            برنامج نقسيط المشتريات
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products & Services Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+      <h6 class="m-0 text-center text-white py-2">النص هنا</h6>
+    </footer>
+    <!-- Start Footer Content -->
+
+    <script>
+      // Custom tab radio switching logic for tab panes using jQuery
+      $(document).ready(function () {
+        function activateTabPane($radio) {
+          var target = $radio.data("bs-target");
+          $(".radio-tab-pane").removeClass("show active");
+          if (target) {
+            $(target).addClass("show active");
+          }
+        }
+
+        // On radio change
+        $(".tab-radio-input").on("change", function () {
+          if ($(this).is(":checked")) {
+            activateTabPane($(this));
+          }
+        });
+
+        // On page load, ensure only the checked radio's pane is active
+        var $checkedRadio = $(".tab-radio-input:checked");
+        if ($checkedRadio.length) {
+          activateTabPane($checkedRadio);
+        }
+      });
+
+      $(document).ready(function () {
+        function activateSelectedTab() {
+          // Get currently selected value from dropdown
+          var targetId = $("#cardsFilterSelect").val();
+
+          // Remove active classes from all panes
+          $("#cardsTabPanesContent .tab-pane").removeClass("show active");
+
+          // Add active classes to the selected pane
+          $("#" + targetId).addClass("show active");
+        }
+
+        // Run once on page load (this handles selected attribute)
+        activateSelectedTab();
+
+        // Run again whenever user changes the dropdown
+        $("#cardsFilterSelect").on("change", function () {
+          activateSelectedTab();
+        });
+      });
+    </script>
+  </body>
+</html>

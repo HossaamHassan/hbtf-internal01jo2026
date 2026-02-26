@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/iskan-gain.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Iskan Gain</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">Iskan Gain</h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Iskan Gain Section Start -->
+    <section class="iskan-gain-section pb-2">
+      <!-- Tabs Navigation -->
+      <div class="top-tabs-container border-gray-color-op-30">
+        <div class="container">
+          <ul class="nav nav-tabs top-tabs" id="topTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <h6
+                class="nav-link active"
+                id="special-discounts-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#special-discounts"
+                type="button"
+                role="tab"
+                aria-controls="special-discounts"
+                aria-selected="true"
+              >
+                الخصومات المميزة
+              </h6>
+            </li>
+            <li class="nav-item" role="presentation">
+              <h6
+                class="nav-link"
+                id="instant-discounts-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#instant-discounts"
+                type="button"
+                role="tab"
+                aria-controls="instant-discounts"
+                aria-selected="true"
+              >
+                الخصومات الفورية
+              </h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Tabs Content -->
+        <div class="tab-content top-tab-content" id="topTabContent">
+          <div
+            class="tab-pane special-discounts-tab fade active show"
+            id="special-discounts"
+            role="tabpanel"
+            aria-labelledby="special-discounts-tab"
+          >
+            <!-- Custom Category Tabs Start -->
+            <div
+              class="category-tabs flex-nowrap nav nav-tabs border-0 mb-4 d-flex gap-3 align-items-center overflow-x-auto p-1"
+              role="tablist"
+            >
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 active d-flex flex-column align-items-center justify-content-center gap-1"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/apps (1) 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">الكل</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="food-drinks-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#food-drinks"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/hamburger-soda (1) 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">طعام وشراب</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="cafes-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#cafes"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/mug-hot-alt (1) 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">كافيهات</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="sweets-bakeries-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#sweets-bakeries"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/pie (1) 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">الحلويات والمخابز</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="health-beauty-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#health-beauty"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/hand-holding-medical 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">صحة وجمال</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="tourism-hotels-tab"
+                data-bs-toggle="tourism-hotels"
+                data-bs-target="#all"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/plane-departure 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">سياحة وفنادق</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="furniture-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#furniture"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/sofa 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">أثاث ومفروشات</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="toys-gifts-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#toys-gifts"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/gift 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">ألعاب وهدايا</p>
+              </button>
+              <button
+                class="category-tab-btn nav-link p-3 border border-gray-color-op-30 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="shops-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#shops"
+                type="button"
+                role="tab"
+              >
+                <picture>
+                  <img src="./assets/icons/shop 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">متاجر</p>
+              </button>
+              <button
+                class="category-tab-btn dropdown-toggle nav-link p-3 radius-8 d-flex flex-column align-items-center justify-content-center gap-1"
+                id="more-tab"
+                data-bs-toggle="dropdown"
+                type="button"
+                role="button"
+                aria-expanded="false"
+              >
+                <picture>
+                  <img src="./assets/icons/apps-add (1) 1.svg" alt="" />
+                </picture>
+                <p class="mb-0 text-center text-nowrap">المزيد</p>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="more-tab">
+                <li>
+                  <button
+                    class="dropdown-item"
+                    id="operations-sector-dropdown-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#operations-sector-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="operations-sector-tab-pane"
+                    aria-selected="false"
+                  >
+                    متاجر
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    id="credit-management-dropdown-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#credit-management-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit-management-tab-pane"
+                    aria-selected="false"
+                  >
+                    أثاث ومفروشات
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    id="specialized-company-dropdown-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#specialized-company-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="specialized-company-tab-pane"
+                    aria-selected="false"
+                  >
+                    صحة وجمال
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- Custom Category Tabs End -->
+            <div
+              class="tab-content inner-top-tab-content"
+              id="innerTopTabContent"
+            >
+              <div
+                class="tab-pane fade active show"
+                id="all"
+                role="tabpanel"
+                aria-labelledby="all"
+              >
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/pmlab-1.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          المختبرات الطبية الدقيقة الجاردنز
+                          <br />
+                          احصل على 25% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/juri-floweres.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          أزهار جوري
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/raghad.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          الرغد للمفروشات
+                          <br />
+                          احصل على 20% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/hamleys-logo.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          Hamleys
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/v-2-100.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          لورويال
+                          <br />
+                          احصل على 10-20% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/bioscan-002.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          شركة الحياة لتصوير بالأشعة التشخيصية و الطبية
+                          <br />
+                          Bio Scan | احصل على 20% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/img-20240925-wa0005.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          حياة ريجنسي العقبة
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/mawaheb.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          مواهب للسياحة والسفر والحج والعمرة
+                          <br />
+                          احصل على 5% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/logo.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          Rejuvenate wellness clinic
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/zoya.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          مؤسسة عمر اسامة لتنظيم وادارة الحفلات
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/healthy-corner-logo.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          Healthy Corner
+                          <br />
+                          احصل على 5% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 d-flex">
+                    <div
+                      class="discount-card bg-white radius-8 d-flex justify-content-center align-items-center flex-column gap-2 flex-grow-1"
+                    >
+                      <picture class="card-logo-container">
+                        <img
+                          src="./assets/images/logos/trs.png"
+                          alt=""
+                          class="card-logo cover-image-class h-100"
+                        />
+                      </picture>
+                      <div
+                        class="discount-card-content d-flex flex-column align-items-center flex-grow-1"
+                      >
+                        <h5 class="text-center text-black flex-grow-1">
+                          ترس
+                          <br />
+                          احصل على 10% خصم
+                        </h5>
+                        <a href="#" class="primary-btn w-fit mt-2">
+                          اعرف اكثر
+                          <picture>
+                            <img src="./assets/icons/Arrow_left.svg" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-md-0 mt-3"
+                >
+                  <div class="rows-info d-flex align-items-center">
+                    <h6
+                      class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color"
+                    >
+                      <span class="pages-numbers mb-0">1-10 من 97</span>
+                      <span class="pages-number-text mb-0">
+                        <span>عدد الصفوف في الصفحة:</span>
+                        <div class="d-inline-block rows-select-wrapper">
+                          <select
+                            class="form-select rows-select"
+                            aria-label="عدد الصفوف في الصفحة"
+                          >
+                            <option value="10" selected>10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                          </select>
+                        </div>
+                      </span>
+                    </h6>
+                  </div>
+                  <!-- Start Pagination -->
+                  <div class="pagination-wrapper mt-4">
+                    <nav aria-label="Page">
+                      <ul
+                        class="pagination justify-content-start pagination-container px-0 mb-0"
+                      >
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle page-disabled"
+                            href="#"
+                            aria-label="Previous"
+                          >
+                            <picture>
+                              <img src="./assets/icons/CaretLeft.svg" alt="" />
+                            </picture>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">1</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">2</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">3</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">...</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            <h5 class="mb-0">14</h5>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="page-link rounded-circle"
+                            href="#"
+                            aria-label="Next"
+                          >
+                            <picture>
+                              <img
+                                src="./assets/icons/CaretLeft.svg"
+                                alt=""
+                                class="caret-left-rotate"
+                              />
+                            </picture>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- End Pagination -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Iskan Gain Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+      <h6 class="m-0 text-center text-white py-2">النص هنا</h6>
+    </footer>
+    <!-- Start Footer Content -->
+  </body>
+</html>

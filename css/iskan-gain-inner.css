@@ -1,0 +1,118 @@
+/* Start Iskan Gain Inner Section */
+
+/* Discount Details Container Start */
+.iskan-gain-inner-section .discount-details-container .brand-logo-container {
+    width: 95px;
+    height: 95px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.iskan-gain-inner-section .terms-conditions-card .cms-content ul {
+    grid-template-columns: 1fr !important;
+}
+/* Discount Details Container End */
+
+/* Branches Container Start */
+/* table */
+.iskan-gain-inner-section .branches-container .table-wrapper {
+    overflow-x: auto;
+}
+
+.iskan-gain-inner-section .branches-container .table thead th {
+    color: var(--white-color) !important;
+    background-color: var(--primary-color);
+    border-inline-end: 1px solid rgb(255 255 255 / 25%) !important;
+    padding-inline: 1rem;
+    padding-block: 12px;
+    text-wrap: nowrap;
+}
+
+.iskan-gain-inner-section .branches-container .table thead th:last-child {
+    border-inline-end: none !important;
+}
+
+.iskan-gain-inner-section .branches-container .table .sort-wrapper picture img {
+    cursor: pointer;
+    filter: var(--filter-white);
+}
+
+.iskan-gain-inner-section .branches-container .table tbody tr td {
+    border-bottom: 1px solid;
+    border-inline-end: 1px solid;
+    padding-inline: 1rem;
+    padding-block: 12px;
+}
+
+.iskan-gain-inner-section .branches-container .table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.iskan-gain-inner-section .branches-container .table tbody tr td:last-child {
+    border-inline-end: none;
+}
+
+.iskan-gain-inner-section .branches-container .table th:last-child,
+.iskan-gain-inner-section .branches-container .table td:last-child {
+    width: 15%;
+    white-space: nowrap;
+}
+
+@media (min-width: 1199.98px) {
+  .iskan-gain-inner-section .branches-container .table tbody tr td:first-child {
+    min-width: 350px;
+  }
+
+  .iskan-gain-inner-section .branches-container .table tbody tr td:nth-child(2) {
+    min-width: 300px;
+  }
+
+  .iskan-gain-inner-section .branches-container .table tbody tr td:nth-child(3) {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .iskan-gain-inner-section .branches-container .table tbody tr td:first-child {
+    min-width: 400px;
+  }
+
+  .iskan-gain-inner-section .branches-container .table tbody tr .name-col {
+    text-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .iskan-gain-inner-section .branches-container .table tbody tr td:first-child {
+    min-width: auto;
+  }
+}
+/* Branches Container End */
+/* End Iskan Gain Inner Section */
+
+/* Discover More Section Start */
+.discover-more-section {
+    background-image: url('../assets/images/album-pattern.png') !important;
+    background-position: bottom !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* Discount Card Start */
+.discover-more-section .discount-card {
+    padding: 1.5rem 1.25rem;
+}
+
+.discover-more-section .discount-card .card-logo-container {
+    width: 95px;
+    height: 95px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+/* Discount Card End */
+/* Discover More Section End */
+
+

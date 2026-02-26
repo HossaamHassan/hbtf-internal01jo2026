@@ -123,4 +123,21 @@
   filter: brightness(0) saturate(100%) invert(39%) sepia(9%) saturate(2890%)
     hue-rotate(200deg) brightness(91%) contrast(89%);
 }
+
+@media (max-width: 767.98px) {
+  .apps-links-section .apps-links-table .action-btns-container {
+    width: 100%;
+  }
+
+  .apps-links-section .apps-links-table .action-btns-container .primary-btn,
+  .apps-links-section .apps-links-table .action-btns-container .primary-outline-btn,
+  .apps-links-section .apps-links-table .action-btns-container .secondary-outline-btn,
+  .apps-links-section .apps-links-table .action-btns-container .gray-outline-btn {
+    width: 100%;
+  }
+
+  .apps-links-section .table tbody tr td {
+    padding-block: 20px;
+  }
+}
 /* Apps Links Section */

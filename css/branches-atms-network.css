@@ -106,6 +106,7 @@
 @media (max-width: 575.98px) {
   .branches-atms-network-section .countries-tab-content .primary-btn {
     width: 100%;
+    justify-content: center;
   }
 }
 
@@ -137,7 +138,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--primary-color) !important;
-  min-width: 265px;
 }
 
 .branches-atms-network-section
@@ -362,10 +362,10 @@
 .cms-content ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
+  column-gap: 2rem;
   row-gap: 0.25rem;
   margin-bottom: 0;
-  padding-inline-start: 2.1rem;
+  padding-inline-start: 1.1rem;
 }
 
 .cms-content ul li {
@@ -389,10 +389,6 @@
   .cms-content ul {
     grid-template-columns: 1fr;
   }
-}
-
-.filter-white {
-  filter: var(--filter-white);
 }
 
 /* End Cms Content */

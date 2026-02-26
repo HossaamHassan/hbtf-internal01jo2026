@@ -47,7 +47,7 @@
 }
 
 .contact-info-section .table thead th:last-child {
-    border-inline-end: none;
+    border-inline-end: none !important;
 }
 
 .contact-info-section .table .sort-wrapper picture img {
