@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/ramadan-competition-4.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>مسابقة Banki الرمضانية</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">مسابقة Banki الرمضانية</h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Ramadan Competition Section Start -->
+    <section class="ramadan-competition-section py-4 mt-2">
+      <div class="container">
+        <!-- Personal Info Section Start -->
+        <div class="personal-info-section radius-8 mb-3">
+          <h3 class="text-primary-color">المعلومات الشخصية</h3>
+          <form action="" class="personal-info-form">
+            <div class="row gx-0 gy-4 gx-md-4 gy-md-0 align-items-center">
+              <div class="col-md-6">
+                <div class="d-flex flex-column gap-2">
+                  <label for="full-name"><span>*</span>الإسم الرباعي</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    class="form-control"
+                    placeholder=" أدخل اسمك الرباعي "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex flex-column gap-2">
+                  <label for="full-name"><span>*</span>الرقم الوظيفي</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    class="form-control"
+                    placeholder=" أدخل الرقم الوظيفي "
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Personal Info Section End -->
+        <!--  Question Section Start -->
+        <div class="question-section bg-white my-4 radius-8 p-4">
+          <div class="d-flex justify-content-between gap-2 flex-wrap mb-3">
+            <div>
+              <h4 class="text-secondary-color">
+                السؤال الثاني: ما هو شعار حملة رمضان للعام 2025؟
+              </h4>
+            </div>
+            <button
+              class="hint-btn d-flex align-items-center gap-2 border-0 bg-transparent"
+            >
+              <h6 class="d-inline-block text-primary-color mb-0">تَلمِيح</h6>
+              <picture class="d-inline-block hint-icon-container">
+                <img src="./assets/icons/light-bulb 1.svg" alt="" />
+              </picture>
+            </button>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="d-flex flex-column gap-2">
+                <label for="answer" class="text-primary-color"
+                  ><span>*</span>
+                  <h4 class="d-inline-block">اكتب الإجابة</h4></label
+                >
+                <textarea
+                  name="answer"
+                  id="answer"
+                  class="form-textarea radius-6 border-2 border-gray-color-op-30"
+                  placeholder=" اكتب الإجابة هنا "
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex flex-column gap-2">
+                <label for="answer" class="text-primary-color"
+                  ><span>*</span>
+                  <h4 class="d-inline-block">ارفاق ملفات</h4></label
+                >
+                <div
+                  class="custom-file-upload d-flex justify-content-center align-items-center radius-6 bg-transparent border-gray-color-op-30 p-3 text-center"
+                >
+                  <input
+                    type="file"
+                    id="fileUpload"
+                    name="fileUpload"
+                    accept=".pdf,.doc,.xlsx"
+                    class="d-none"
+                  />
+                  <label
+                    for="fileUpload"
+                    class="file-upload-label d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <img src="assets/icons/file 1.svg" alt="" />
+                    <h5 class="text-primary-color text-center mt-3 mb-1">
+                      اسحب الملف وأفلته أو اختر الملف المراد تحميله
+                    </h5>
+                    <p class="text-gray-color text-center mb-0">
+                      التنسيقات المدعومة: PDF، Doc XLSX
+                    </p>
+                    <div id="fileNames" class="text-center mt-2"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="primary-btn">
+                ارسل الإجابة
+                <picture>
+                  <img src="./assets/icons/Arrow_left.svg" alt="" />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  Question Section End -->
+        <!--  Alerts Section Start -->
+        <div class="alerts-section p-4 radius-8 mb-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <picture>
+              <img src="./assets/icons/Icon.svg" alt="" />
+            </picture>
+            <h4 class="text-pink-color mb-0">تنبيهات هامة</h4>
+          </div>
+          <div class="alerts-content d-flex flex-column gap-1">
+            <h6 class="text-pink-color mb-0">
+              لا يحق للموظف المشاركة في المسابقة إلا مرة واحدة يومياً
+            </h6>
+            <h6 class="text-pink-color mb-0">
+              يرجى قراءة
+              <a href="#" class="text-pink-color text-decoration-underline"
+                >شروط وأحكام</a
+              >
+              مسابقة Banki الرمضانية
+            </h6>
+            <h6 class="text-pink-color mb-0">
+              سيتم الإعلان عن الفائزين في نهاية شهر رمضان المبارك
+            </h6>
+          </div>
+        </div>
+        <!--  Alerts Section End -->
+      </div>
+    </section>
+    <!-- Ramadan Competition Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+      <h6 class="m-0 text-center text-white py-2">النص هنا</h6>
+    </footer>
+    <!-- Start Footer Content -->
+
+    <script>
+      $(document).ready(function () {
+        // Drag & drop highlight
+        $(".custom-file-upload").on("dragover", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).addClass("dragover");
+        });
+        $(".custom-file-upload").on("dragleave drop", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).removeClass("dragover");
+        });
+
+        $(".custom-file-upload").on("drop", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).removeClass("dragover");
+          var files = e.originalEvent.dataTransfer.files;
+          $("#fileUpload")[0].files = files;
+
+          // Trigger change event to show file names
+          $("#fileUpload").trigger("change");
+        });
+
+        $("#fileUpload").on("change", function () {
+          const files = this.files;
+          const names = [];
+          for (var i = 0; i < files.length; i++) {
+            names.push(files[i].name);
+          }
+          if (names.length > 0) {
+            $("#fileNames").html(
+              '<small class="text-primary-color"> ' +
+                names.join(", ") +
+                "</small>",
+            );
+          } else {
+            $("#fileNames").html("");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

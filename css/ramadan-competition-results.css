@@ -1,0 +1,125 @@
+/* Question Section Start */
+.ramadan-competition-section .question-section .answer-container {
+  padding: 1rem 0.7rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.ramadan-competition-section
+  .question-section
+  .answer-container.correct-answer {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.ramadan-competition-section
+  .question-section
+  .answer-container.correct-answer
+  h6 {
+  color: var(--primary-color) !important;
+}
+
+.ramadan-competition-section .question-section .answer-container h6 {
+  text-align: start;
+}
+
+.ramadan-competition-section .question-section .video-container::after {
+  content: "";
+  background-color: #0000004d;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.ramadan-competition-section .question-section .play-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.ramadan-competition-section .question-section .play-icon img {
+  cursor: pointer;
+}
+/* Question Section End */
+
+/* Winners Section Start */
+/* table */
+.ramadan-competition-section .winners-section .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid;
+}
+
+.ramadan-competition-section .winners-section .table thead th {
+  color: var(--white-color) !important;
+  background-color: var(--primary-color);
+  border-inline-end: 1px solid rgb(255 255 255 / 25%) !important;
+  padding-inline: 1rem;
+  padding-block: 12px;
+  text-wrap: nowrap;
+}
+
+.ramadan-competition-section .winners-section .table thead th:last-child {
+  border-inline-end: none !important;
+}
+
+.ramadan-competition-section .winners-section .table .sort-wrapper picture img {
+  cursor: pointer;
+  filter: var(--filter-white);
+}
+
+.ramadan-competition-section .winners-section .table tbody tr td {
+  border-bottom: 1px solid;
+  border-inline-end: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
+}
+
+.ramadan-competition-section .winners-section .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ramadan-competition-section .winners-section .table tbody tr td:last-child {
+  border-inline-end: none;
+}
+
+.ramadan-competition-section .winners-section .table th:last-child,
+.ramadan-competition-section .winners-section .table td:last-child {
+  width: 15%;
+  white-space: nowrap;
+}
+
+@media (min-width: 1199.98px) {
+  .ramadan-competition-section .winners-section .table tbody tr td:first-child {
+    min-width: 200px;
+  }
+
+  .ramadan-competition-section .winners-section .table tbody tr td:nth-child(2) {
+    min-width: 200px;
+  }
+
+  .ramadan-competition-section .winners-section .table tbody tr td:nth-child(3) {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ramadan-competition-section .winners-section .table tbody tr td:first-child {
+    min-width: 200px;
+  }
+
+  .ramadan-competition-section .winners-section .table tbody tr .name-col {
+    text-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ramadan-competition-section .winners-section .table tbody tr td:first-child {
+    min-width: auto;
+  }
+}
+/* Winners Section End */

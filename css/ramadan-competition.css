@@ -1,0 +1,201 @@
+/* Personal Section */
+.ramadan-competition-section .personal-info-section {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--white-color);
+}
+/* Personal Section */
+
+/* Question Section */
+.ramadan-competition-section .question-section .hint-btn .hint-icon-container {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}
+/* Question Section */
+
+/* Custom radio for all browsers using pseudo-elements */
+.ramadan-competition-section
+  .answer-container
+  .radio-item
+  .radio-input[type="radio"]:checked {
+  border-color: var(--primary-color);
+}
+
+.ramadan-competition-section
+  .answer-container
+  .radio-item
+  .radio-input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--gray-color);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.ramadan-competition-section
+  .answer-container
+  .radio-item
+  .radio-input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.65rem;
+  height: 0.65rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ramadan-competition-section .answer-container {
+  padding: 1rem 0.7rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.ramadan-competition-section .answer-container.selected {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.ramadan-competition-section .answer-container .radio-item {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.ramadan-competition-section .answer-container .radio-item h6 {
+  text-align: start;
+}
+
+.ramadan-competition-section .answer-container .link-btn {
+  border: 2px solid var(--primary-color);
+  background-color: var(--white-color);
+  border-radius: var(--radius-full);
+  width: 34px;
+  height: 34px;
+  padding: 0.5rem;
+}
+
+.ramadan-competition-section .answer-container .link-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.ramadan-competition-section .answer-container .link-btn img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(24%) saturate(1175%)
+    hue-rotate(199deg) brightness(92%) contrast(86%);
+}
+
+.ramadan-competition-section .answer-container .link-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(4787%)
+    hue-rotate(216deg) brightness(123%) contrast(100%);
+}
+
+.tooltip-inner {
+  border-radius: 6px !important;
+  background-color: var(--gray-color) !important;
+  max-width: 300px;
+}
+
+.tooltip-arrow::before {
+  border-top-color: var(--gray-color) !important;
+}
+
+@media (max-width: 575.98px) {
+  .ramadan-competition-section .answer-container .link-btn {
+    width: 100%;
+  }
+}
+
+/* Ramadan Slider */
+.ramadan-competition-section .ramadan-slider .ramadan-slide::after {
+  content: "";
+  background-color: #0000004d;
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.ramadan-competition-section .ramadan-slider .ramadan-slide .play-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.ramadan-competition-section .ramadan-slider .ramadan-slide .play-icon img {
+  cursor: pointer;
+}
+
+.ramadan-competition-section .ramadan-slider-container .ramadan-pagination {
+  position: absolute;
+  bottom: 8px;
+}
+
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-pagination
+  .swiper-pagination-bullet {
+  background-color: var(--white-color) !important;
+  opacity: 1;
+}
+
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-pagination
+  .swiper-pagination-bullet-active {
+  background-color: var(--primary-color) !important;
+}
+
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-swiper-button-prev,
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-swiper-button-next {
+  position: absolute !important;
+  background-color: #ffffff99;
+  border-radius: var(--radius-full);
+  color: var(--primary-color);
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-swiper-button-prev {
+  inset-inline-start: 1rem;
+}
+
+.ramadan-competition-section
+  .ramadan-slider-container
+  .ramadan-swiper-button-next {
+  inset-inline-end: 1rem;
+}
+
+/* Ramadan Slider */
+
+/* Alerts Section */
+.ramadan-competition-section .alerts-section {
+  border: 1px solid rgb(255 0 139 / 50%);
+  background-color: rgb(255 0 139 / 5%);
+}
+
+.ramadan-competition-section .alerts-content {
+    padding-inline-start: 2.35rem;
+}
+
+.ramadan-competition-section .alerts-content h6 {
+    text-align: start;
+}
+/* Alerts Section */

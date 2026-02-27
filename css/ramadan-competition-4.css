@@ -1,0 +1,48 @@
+/* Personal Section */
+.ramadan-competition-section .personal-info-section {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--white-color);
+}
+/* Personal Section */
+
+/* Question Section */
+.ramadan-competition-section .question-section .hint-btn .hint-icon-container {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.ramadan-competition-section .question-section .form-textarea {
+    min-height: 350px;
+}
+
+.custom-file-upload {
+  border: 2px dashed;
+  min-height: 350px;
+  transition: border-color 0.2s;
+}
+.custom-file-upload.dragover {
+  border-color: var(--primary-color) !important;
+  background: rgb(89 92 163 / 10%) !important;
+}
+
+.file-upload-label {
+    cursor: pointer;
+}
+/* Question Section */
+
+/* Alerts Section */
+.ramadan-competition-section .alerts-section {
+  border: 1px solid rgb(255 0 139 / 50%);
+  background-color: rgb(255 0 139 / 5%);
+}
+
+.ramadan-competition-section .alerts-content {
+    padding-inline-start: 2.35rem;
+}
+
+.ramadan-competition-section .alerts-content h6 {
+    text-align: start;
+}
+/* Alerts Section */

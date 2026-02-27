@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/ramadan-competition-results.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>نتائج المسابقة</title>
+  </head>
+
+  <body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+      <div class="container">
+        <h3 class="text-primary-color mb-0">نتائج المسابقة</h3>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Ramadan Competition Section Start -->
+    <section class="ramadan-competition-section py-4 mt-2">
+      <div class="container">
+        <!--  Question Section Start -->
+        <div class="question-section bg-white mb-4 radius-8 p-4">
+          <h4 class="text-secondary-color mb-3">
+            السؤال الأول: ما هو شعار حملة رمضان للعام 2025؟
+          </h4>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="answer-container border border-gray-color-op-25 radius-8 d-flex justify-content-center align-items-start gap-2 justify-content-sm-between align-items-sm-center flex-column flex-sm-row"
+                >
+                  <h6 class="text-gray-color mb-0">
+                    رمضان مليات حكايات.. وانت شو حكايتك؟
+                  </h6>
+                </div>
+                <div
+                  class="answer-container correct-answer border border-gray-color-op-25 radius-8 d-flex justify-content-center align-items-start gap-2 justify-content-sm-between align-items-sm-center flex-column flex-sm-row"
+                >
+                  <h6 class="text-gray-color mb-0">رمضان بيكمل بوجودكم</h6>
+                </div>
+                <div
+                  class="answer-container border border-gray-color-op-25 radius-8 d-flex justify-content-center align-items-start gap-2 justify-content-sm-between align-items-sm-center flex-column flex-sm-row"
+                >
+                  <h6 class="text-gray-color mb-0">رمضان شهر الخير</h6>
+                </div>
+                <div
+                  class="answer-container border border-gray-color-op-25 radius-8 d-flex justify-content-center align-items-start gap-2 justify-content-sm-between align-items-sm-center flex-column flex-sm-row"
+                >
+                  <h6 class="text-gray-color mb-0">اضحك ومشيها</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="video-container radius-6 overflow-hidden position-relative"
+              >
+                <picture>
+                  <img
+                    src="./assets/images/ramadan/file-18913-2d11cab24467c01f935f83fa8ec58bf8 1.png"
+                    alt=""
+                    class="cover-image-class"
+                  />
+                </picture>
+                <picture class="play-icon">
+                  <img src="./assets/icons/Play_duotone.svg" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="#" class="primary-btn">
+                ارسل الإجابة
+                <picture>
+                  <img src="./assets/icons/Arrow_left.svg" alt="" />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  Question Section End -->
+        <!--  Pagination Buttons Start -->
+        <div class="pagination-buttons-container mt-3 mb-2">
+          <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+            <button
+              class="prev-question-btn radius-8 bg-white border border-gray-color-op-30 p-2 d-flex justify-content-center align-items-center gap-1"
+            >
+              <i class="fas fa-chevron-left"></i>
+              <h6 class="d-inline-block mb-0">السؤال التالي</h6>
+            </button>
+            <button
+              class="prev-question-btn radius-8 bg-white border border-gray-color-op-30 p-2 d-flex justify-content-center align-items-center gap-1"
+            >
+              <h6 class="d-inline-block mb-0">السؤال السابق</h6>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!--  Pagination Buttons End -->
+        <!--  Winners Section Start -->
+        <div class="winners-section pt-4 pb-2">
+          <h2 class="text-primary-color mb-4">الفائزين</h2>
+          <div
+            class="table-wrapper border-gray-color-op-25 radius-8 overflow-y-hidden"
+          >
+            <table class="table align-middle mb-0">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-name border-gray-color-op-25">
+                    <div
+                      class="d-flex justify-content-between align-items-center gap-3"
+                    >
+                      <h5 class="mb-0">الاسم</h5>
+                      <span class="sort-wrapper">
+                        <picture>
+                          <img
+                            src="./assets/icons/Up - Down arrow.svg"
+                            alt=""
+                          />
+                        </picture>
+                      </span>
+                    </div>
+                  </th>
+                  <th scope="col" class="col-name border-gray-color-op-25">
+                    <div
+                      class="d-flex justify-content-between align-items-center gap-3"
+                    >
+                      <h5 class="mb-0">مكان العمل</h5>
+                      <div class="sort-wrapper">
+                        <picture>
+                          <img
+                            src="./assets/icons/Up - Down arrow.svg"
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </th>
+                  <th scope="col" class="col-name border-gray-color-op-25">
+                    <div
+                      class="d-flex justify-content-between align-items-center gap-3"
+                    >
+                      <h5 class="mb-0">الجائزة</h5>
+                      <div class="sort-wrapper">
+                        <picture>
+                          <img
+                            src="./assets/icons/Up - Down arrow.svg"
+                            alt=""
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">اسم الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">مكان عمل الفائز</h5>
+                  </td>
+                  <td class="name-col border-gray-color-op-25">
+                    <h5 class="text-gray-color mb-0">الجائزة</h5>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!--  Winners Section End -->
+      </div>
+    </section>
+    <!-- Ramadan Competition Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+      <h6 class="m-0 text-center text-white py-2">النص هنا</h6>
+    </footer>
+    <!-- Start Footer Content -->
+  </body>
+</html>

@@ -1,9 +1,13 @@
 label {
-    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray-color);
 }
 
 label span {
-    color: #D71F26;
+    color: var(--pink-color);
+    font-size: unset;
+    font-weight: unset;
 }
 
 input,
@@ -18,21 +22,22 @@ input[type="checkbox"] {
 
 .form-control {
     width: 100%;
-    outline: var(--main-border);
-    border-radius: var(--radius-circle);
+    background-color: rgb(241 243 245 / 50%) !important;
+    outline: 2px solid rgb(87 87 86 / 15%) !important;
+    border-radius: 8px;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.9rem;
+    padding: 1rem 1.5rem;
 }
 
 .form-control:focus {
     border: none;
     box-shadow: unset;
-    outline: 2px solid rgb(0 38 62 / 10%);
 }
 
 .form-control::placeholder {
-    color: rgb(45 41 38 / 30%) !important;
+    color: var(--gray-color) !important;
 }
 
 .form-select {
@@ -59,7 +64,7 @@ input[type="checkbox"] {
 .form-textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    outline: var(--main-border);
+    outline: 2px solid rgb(87 87 86 / 15%);
     border-radius: var(--radius-circle);
     border: none;
     font-weight: 700;
@@ -67,7 +72,7 @@ input[type="checkbox"] {
 }
 
 .form-textarea::placeholder {
-    color: rgb(45 41 38 / 30%) !important;
+    color: rgb(87 87 86 / 50%) !important;
 }
 
 .form-textarea:focus {
