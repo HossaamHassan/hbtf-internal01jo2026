@@ -69,14 +69,12 @@
         <!-- Personal Info Section End -->
         <!--  Question Section Start -->
         <div class="question-section bg-white my-4 radius-8 p-4">
-          <div
-            class="d-flex justify-content-between gap-2 flex-wrap mb-3"
-          >
+          <div class="d-flex justify-content-between gap-2 flex-wrap mb-3">
             <div>
               <h4 class="text-secondary-color">
-              السؤال الأول: ما هو شعار حملة رمضان للعام 2025؟
-            </h4>
-            <h6 class="mb-0">1 من 10 اسئلة</h6>
+                السؤال الأول: ما هو شعار حملة رمضان للعام 2025؟
+              </h4>
+              <h6 class="mb-0">1 من 10 اسئلة</h6>
             </div>
             <button
               class="hint-btn d-flex align-items-center gap-2 border-0 bg-transparent"
@@ -196,40 +194,58 @@
                 <div class="swiper ramadan-slider radius-6 overflow-hidden">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide ramadan-slide position-relative">
-                      <picture>
+                      <a
+                        href="https://www.youtube.com/watch?v=PUdyuKaGQd4"
+                        data-fancybox="gallery"
+                        class="video-popup"
+                      >
                         <img
                           src="./assets/images/ramadan/file-18913-2d11cab24467c01f935f83fa8ec58bf8 1.png"
-                          alt=""
-                          class="cover-image-class"
+                          alt="Video poster"
+                          class="default-image-class"
                         />
-                      </picture>
-                      <picture class="play-icon">
-                        <img src="./assets/icons/Play_duotone.svg" alt="" />
-                      </picture>
+                        <div
+                          class="play-icon position-absolute d-flex align-items-center justify-content-center start-50 top-50 translate-middle rounded-circle"
+                        >
+                          <i class="fa-solid fa-play text-white"></i>
+                        </div>
+                      </a>
                     </div>
                     <div class="swiper-slide ramadan-slide position-relative">
-                      <picture>
+                      <a
+                        href="https://www.youtube.com/watch?v=PUdyuKaGQd4"
+                        data-fancybox="gallery"
+                        class="video-popup"
+                      >
                         <img
-                          src="./assets/images/ramadan/file-18913-2d11cab24467c01f935f83fa8ec58bf8 1.png"
-                          alt=""
-                          class="cover-image-class"
+                          src="./assets/images/ramadan/Frame 1000006338.png"
+                          alt="Video poster"
+                          class="default-image-class"
                         />
-                      </picture>
-                      <picture class="play-icon">
-                        <img src="./assets/icons/Play_duotone.svg" alt="" />
-                      </picture>
+                        <div
+                          class="play-icon position-absolute d-flex align-items-center justify-content-center start-50 top-50 translate-middle rounded-circle"
+                        >
+                          <i class="fa-solid fa-play text-white"></i>
+                        </div>
+                      </a>
                     </div>
                     <div class="swiper-slide ramadan-slide position-relative">
-                      <picture>
+                      <a
+                        href="https://www.youtube.com/watch?v=PUdyuKaGQd4"
+                        data-fancybox="gallery"
+                        class="video-popup"
+                      >
                         <img
                           src="./assets/images/ramadan/file-18913-2d11cab24467c01f935f83fa8ec58bf8 1.png"
-                          alt=""
-                          class="cover-image-class"
+                          alt="Video poster"
+                          class="default-image-class"
                         />
-                      </picture>
-                      <picture class="play-icon">
-                        <img src="./assets/icons/Play_duotone.svg" alt="" />
-                      </picture>
+                        <div
+                          class="play-icon position-absolute d-flex align-items-center justify-content-center start-50 top-50 translate-middle rounded-circle"
+                        >
+                          <i class="fa-solid fa-play text-white"></i>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -294,6 +310,10 @@
     <!-- Start Footer Content -->
 
     <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+
       $(document).ready(function () {
         $('[data-bs-toggle="tooltip"]').tooltip();
 
