@@ -138,6 +138,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--primary-color) !important;
+  background-color: var(--white-color) !important;
 }
 
 .branches-atms-network-section

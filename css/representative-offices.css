@@ -1,3 +1,7 @@
+.representative-offices-section .filters-section .search-input {
+  background-color: var(--white-color) !important;
+}
+
 /* Start Offices Card */
 .representative-offices-section .offices-card {
   background-color: var(--white-color);
