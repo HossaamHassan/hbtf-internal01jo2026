@@ -151,3 +151,30 @@ input[type="checkbox"] {
     border: none;
     outline-color: rgba(89 92 163 / 70%);
 }
+.filters-section .search-wrapper {
+    position: relative;
+}
+
+.filters-section .search-input {
+    padding-inline-start: 2.2rem;
+    padding-inline-end: 1rem;
+    padding-block: 13px !important;
+    outline: 1px solid;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    min-width: 265px;
+}
+
+.filters-section .search-input::placeholder {
+    color: rgb(87 87 86 / 50%) !important;
+}
+
+.filters-section .search-icon {
+    position: absolute;
+    inset-inline-start: 0.85rem;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
