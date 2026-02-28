@@ -2,61 +2,61 @@
 
 /* Discount Details Container Start */
 .iskan-gain-inner-section .discount-details-container .brand-logo-container {
-    width: 95px;
-    height: 95px;
-    border: 2px solid var(--primary-color);
-    border-radius: var(--radius-full);
-    overflow: hidden;
+  width: 95px;
+  height: 95px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-full);
+  overflow: hidden;
 }
 
 .iskan-gain-inner-section .terms-conditions-card .cms-content ul {
-    grid-template-columns: 1fr !important;
+  grid-template-columns: 1fr !important;
 }
 /* Discount Details Container End */
 
 /* Branches Container Start */
 /* table */
 .iskan-gain-inner-section .branches-container .table-wrapper {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .iskan-gain-inner-section .branches-container .table thead th {
-    color: var(--white-color) !important;
-    background-color: var(--primary-color);
-    border-inline-end: 1px solid rgb(255 255 255 / 25%) !important;
-    padding-inline: 1rem;
-    padding-block: 12px;
-    text-wrap: nowrap;
+  color: var(--white-color) !important;
+  background-color: var(--primary-color);
+  border-inline-end: 1px solid rgb(255 255 255 / 25%) !important;
+  padding-inline: 1rem;
+  padding-block: 12px;
+  text-wrap: nowrap;
 }
 
 .iskan-gain-inner-section .branches-container .table thead th:last-child {
-    border-inline-end: none !important;
+  border-inline-end: none !important;
 }
 
 .iskan-gain-inner-section .branches-container .table .sort-wrapper picture img {
-    cursor: pointer;
-    filter: var(--filter-white);
+  cursor: pointer;
+  filter: var(--filter-white);
 }
 
 .iskan-gain-inner-section .branches-container .table tbody tr td {
-    border-bottom: 1px solid;
-    border-inline-end: 1px solid;
-    padding-inline: 1rem;
-    padding-block: 12px;
+  border-bottom: 1px solid;
+  border-inline-end: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
 }
 
 .iskan-gain-inner-section .branches-container .table tbody tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .iskan-gain-inner-section .branches-container .table tbody tr td:last-child {
-    border-inline-end: none;
+  border-inline-end: none;
 }
 
 .iskan-gain-inner-section .branches-container .table th:last-child,
 .iskan-gain-inner-section .branches-container .table td:last-child {
-    width: 15%;
-    white-space: nowrap;
+  width: 15%;
+  white-space: nowrap;
 }
 
 @media (min-width: 1199.98px) {
@@ -64,11 +64,21 @@
     min-width: 350px;
   }
 
-  .iskan-gain-inner-section .branches-container .table tbody tr td:nth-child(2) {
+  .iskan-gain-inner-section
+    .branches-container
+    .table
+    tbody
+    tr
+    td:nth-child(2) {
     min-width: 300px;
   }
 
-  .iskan-gain-inner-section .branches-container .table tbody tr td:nth-child(3) {
+  .iskan-gain-inner-section
+    .branches-container
+    .table
+    tbody
+    tr
+    td:nth-child(3) {
     min-width: 300px;
   }
 }
@@ -92,27 +102,39 @@
 /* End Iskan Gain Inner Section */
 
 /* Discover More Section Start */
-.discover-more-section {
-    background-image: url('../assets/images/album-pattern.png') !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+.discover-more-section::after {
+  content: "";
+  background-image: url("../assets/images/album-pattern.png") !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
 }
 
+.discover-more-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: -1rem;
+  z-index: -1;
+  background: linear-gradient(to bottom, #f3f5f7, #f3f5f700);
+}
 /* Discount Card Start */
+
 .discover-more-section .discount-card {
-    padding: 1.5rem 1.25rem;
+  padding: 1.5rem 1.25rem;
 }
 
 .discover-more-section .discount-card .card-logo-container {
-    width: 95px;
-    height: 95px;
-    border: 2px solid var(--primary-color);
-    border-radius: var(--radius-full);
-    overflow: hidden;
+  width: 95px;
+  height: 95px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-full);
+  overflow: hidden;
 }
 
 /* Discount Card End */
 /* Discover More Section End */
-
-
