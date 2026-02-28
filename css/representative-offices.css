@@ -1,32 +1,3 @@
-/* Representative Offices Section */
-.representative-offices-section .search-wrapper {
-  position: relative;
-}
-
-.representative-offices-section .search-input {
-  padding-inline-start: 2.2rem;
-  padding-inline-end: 1rem;
-  padding-block: 13px !important;
-  outline: 1px solid;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--primary-color) !important;
-  min-width: 265px;
-}
-
-.representative-offices-section .search-input::placeholder {
-  color: rgb(87 87 86 / 50%) !important;
-}
-
-.representative-offices-section .search-icon {
-  position: absolute;
-  inset-inline-start: 0.85rem;
-  inset-block-start: 50%;
-  transform: translateY(-50%);
-  color: var(--primary-color);
-  font-size: 0.9rem;
-}
-
 /* Start Offices Card */
 .representative-offices-section .offices-card {
   background-color: var(--white-color);
@@ -50,47 +21,31 @@
   align-items: stretch !important;
 }
 
-.representative-offices-section
-  .offices-card
-  .office-info-card
-  .office-info-card-title {
+.representative-offices-section .offices-card .office-info-card .office-info-card-title {
   background-color: var(--primary-color);
   padding: 1rem 0.75rem;
   min-width: 200px;
 }
 
 @media (max-width: 1399.98px) {
-    .representative-offices-section
-  .offices-card
-  .office-info-card
-  .office-info-card-title {
+  .representative-offices-section .offices-card .office-info-card .office-info-card-title {
     min-width: 140px;
   }
 }
 
 @media (max-width: 575.98px) {
-    .representative-offices-section
-  .offices-card
-  .office-info-card
-  .office-info-card-title {
+  .representative-offices-section .offices-card .office-info-card .office-info-card-title {
     min-width: auto;
   }
 }
 
-.representative-offices-section
-  .offices-card
-  .office-info-card
-  .office-info-card-content {
+.representative-offices-section .offices-card .office-info-card .office-info-card-content {
   padding: 1rem 0.75rem;
   padding-inline-end: 1.5rem;
   flex: 1 1 auto;
 }
 
-.representative-offices-section
-  .offices-card
-  .office-info-card
-  .office-info-card-content
-  h6 {
+.representative-offices-section .offices-card .office-info-card .office-info-card-content h6 {
   text-align: start;
 }
 
@@ -100,10 +55,7 @@
   padding: 1rem 0.75rem;
 }
 
-.representative-offices-section
-  .offices-card
-  .separated-info
-  h6:not(:last-child)::after {
+.representative-offices-section .offices-card .separated-info h6:not(:last-child)::after {
   content: "|";
   color: var(--gray-color);
   margin: 0 0.5rem;
@@ -111,29 +63,18 @@
 }
 
 @media (min-width: 575.98px) {
-  .representative-offices-section
-    .offices-card-info
-    .row
-    > .separated-info-col:nth-child(odd)
-    .separated-info {
+  .representative-offices-section .offices-card-info .row>.separated-info-col:nth-child(odd) .separated-info {
     justify-content: flex-end;
   }
 
-  .representative-offices-section
-    .offices-card-info
-    .row
-    > .separated-info-col:nth-child(even)
-    .separated-info {
+  .representative-offices-section .offices-card-info .row>.separated-info-col:nth-child(even) .separated-info {
     justify-content: flex-start;
   }
 }
 
-.representative-offices-section
-  .offices-card-info
-  .row
-  > .separated-info-col
-  .separated-info {
+.representative-offices-section .offices-card-info .row>.separated-info-col .separated-info {
   justify-content: center;
 }
+
 /* Start Offices Card */
 /* Representative Offices Section */

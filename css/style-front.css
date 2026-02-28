@@ -299,9 +299,8 @@ h5 {
 }
 
 p,
-li,
 h6 {
-    font-size: .95rem;
+    font-size: .9rem;
     text-align: justify;
 }
 
@@ -459,19 +458,19 @@ ul {
 }
 
 .bg-primary-color-op-50 {
-  background-color: rgb(89 92 163 / 50%) !important;
+    background-color: rgb(89 92 163 / 50%) !important;
 }
 
 .bg-primary-color-op-70 {
-  background-color: rgb(89 92 163 / 70%) !important;
+    background-color: rgb(89 92 163 / 70%) !important;
 }
 
 .bg-secondary-color-op-10 {
-    background-color: #65B6491A !important;
+    background-color: #00A8971A !important;
 }
 
 .bg-red-color-op-25 {
-  background-color: rgb(255 0 0 / 25%) !important;
+    background-color: rgb(255 0 0 / 25%) !important;
 }
 
 /* border & outline color classes */
@@ -508,11 +507,11 @@ ul {
 }
 
 .radius-6 {
-  border-radius: 6px !important;
+    border-radius: 6px !important;
 }
 
 .radius-8 {
-  border-radius: 8px !important;
+    border-radius: 8px !important;
 }
 
 .radius-10 {
@@ -566,6 +565,7 @@ ul {
 .hero-section {
     padding: 1.9rem 0;
 }
+
 /* End Hero Section */
 
 /* Start Header Images */
@@ -929,116 +929,143 @@ footer {
     padding: 10px;
 }
 
+.contest-trip-section.faqs-section .accordion-item button,
+.contest-trip-section.faqs-section .accordion-item {
+    background-color: transparent;
+}
+
+.contest-trip-section .main-title-section,
+.contest-trip-section.faqs-section .accordion-item .accordion-header {
+    border-bottom: var(--main-border);
+}
+
+.contest-trip-section.faqs-section .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+
+.contest-trip-section.faqs-section .accordion-button:not(.collapsed) h4 {
+    color: var(--iskanovators-color) !important;
+}
+
+.contest-trip-section.faqs-section .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(378%) hue-rotate(352deg) brightness(85%) contrast(81%) !important;
+}
+
 /*  End Faqs Section */
 /* Start Add Space Section */
 .add-space-section .add-space-container {
     max-width: 70%;
 }
 
+@media (max-width: 767.98px) {
+    .add-space-section .add-space-container {
+        max-width: var(--container-width);
+    }
+}
+
 /* End Add Space Section */
 
 /* Start Pagination */
 .pagination-wrapper {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .pagination-wrapper .pagination {
-  gap: 12px !important;
+    gap: 12px !important;
 }
 
 .pagination-container .page-item {
-  width: 40px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  aspect-ratio: 1;
-  transition: all 0.3s ease-out;
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1;
+    transition: all 0.3s ease-out;
 }
 
 .pagination-container .page-item .page-link {
-  padding: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  width: max-content;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  outline: none;
-  border: 1px solid rgb(87 87 86 / 25%);
-  background: transparent;
-  color: var(--primary-color);
-  transition: all 0.2s ease-out;
-  border-radius: 50%;
+    padding: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: max-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(87 87 86 / 25%);
+    background: transparent;
+    color: var(--primary-color);
+    transition: all 0.2s ease-out;
+    border-radius: 50%;
 }
 
 .pagination-container .page-item .page-link:hover {
-  border-color: var(--primary-color);
-  border-width: 2px;
-  background-color: var(--white-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+    background-color: var(--white-color);
 }
 
 .pagination-container .page-item,
 .pagination-container .page-item.active {
-  position: relative;
+    position: relative;
 }
 
 .pagination-container .page-item .page-link .caret-left-rotate {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .pagination-container .page-item.active .page-link {
-  border-color: var(--primary-color);
-  border-width: 2px;
-  background-color: var(--white-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+    background-color: var(--white-color);
 }
 
-.arabic-version
-  .pagination-container
-  .page-item:not(:first-child):not(:last-child):hover::before,
+.arabic-version .pagination-container .page-item:not(:first-child):not(:last-child):hover::before,
 .arabic-version .pagination-container .page-item::before {
-  inset-inline-start: 0;
+    inset-inline-start: 0;
 }
 
 .arabic-version .pagination-container .page-item:last-of-type .page-link,
 .arabic-version .pagination-container .page-item:nth-child(1) .page-link {
-  transform: scale(-1);
+    transform: scale(-1);
 }
 
 .pagination-container .page-item:nth-child(1) .page-link,
 .pagination-container .page-item:last-of-type .page-link {
-  background-color: var(--primary-color);
-  border-color: transparent;
-  color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: transparent;
+    color: var(--white-color);
 }
 
 .pagination-container .page-item:last-of-type .page-link {
-  color: var(--white-color);
+    color: var(--white-color);
 }
 
 .pagination-container .page-item .page-link.page-disabled {
-  background-color: rgba(89 92 163 / 50%);
-  pointer-events: none;
+    background-color: rgba(89 92 163 / 50%);
+    pointer-events: none;
 }
 
 @media (max-width: 575px) {
-  .pagination-container .page-item .page-link {
-    width: 2.8rem;
-  }
+    .pagination-container .page-item .page-link {
+        width: 2.8rem;
+    }
 }
 
 @media (max-width: 350px) {
-  .pagination-container {
-    gap: 0.5rem;
-  }
+    .pagination-container {
+        gap: 0.5rem;
+    }
 }
 
 @media (max-width: 575.8889px) {
-  .pagination-container .page-item:nth-child(3),
-  .pagination-container .page-item:nth-child(4) {
-    display: none;
-  }
+
+    .pagination-container .page-item:nth-child(3),
+    .pagination-container .page-item:nth-child(4) {
+        display: none;
+    }
 }
 
 /* End Pagination */
@@ -1047,6 +1074,7 @@ footer {
 .rows-info {
     font-size: 0.85rem;
 }
+
 .rows-info h6 span {
     color: var(--gray-color);
     font-size: unset;
@@ -1057,9 +1085,11 @@ footer {
     border-inline-end: 1px solid var(--gray-color);
     padding-inline-end: 0.65rem;
 }
+
 .rows-info .pages-number-text {
     padding-inline-start: 0.65rem;
 }
+
 .rows-select {
     padding-inline-start: 0.25rem !important;
     font-size: 0.95rem;
@@ -1076,36 +1106,65 @@ footer {
     border: none;
     outline: none;
 }
+
 /* End Rows per page + info (under table) */
 
 /* Start Cms Content */
 .cms-content ul {
-  column-count: 3;
-  column-gap: 2.5rem;
-  margin-bottom: 0;
-  padding-inline-start: 2.1rem;
+    padding-inline-start: 1rem;
 }
 
 .cms-content ul li {
-  list-style: disc;
-  color: var(--gray-color);
+    list-style: disc;
+    color: var(--gray-color);
 }
 
 .cms-content ul li::marker {
-  color: var(--gray-color) !important;
-  font-size: 0.7rem;
+    color: var(--gray-color) !important;
+    font-size: 0.7rem;
 }
 
-@media (max-width: 991.98px) {
-  .cms-content ul {
-    column-count: 2;
-  }
+.contest-trip-section .cms-content h5 {
+    color: var(--iskanovators-color);
 }
 
-@media (max-width: 767.98px) {
-  .cms-content ul {
-    column-count: 1;
-  }
+.contest-trip-section .cms-content ul h5 {
+    color: var(--gray-color);
 }
 
 /* End Cms Content */
+/* Start Members Section */
+.members-section .member-card-img {
+    outline: 3px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.members-section .member-card p {
+    color: var(--primary-color);
+}
+
+.members-section.secondary-members-section .member-card-img {
+    outline-color: var(--secondary-color);
+}
+
+.members-section.secondary-members-section .member-card p {
+    color: var(--secondary-color);
+}
+
+.names-of-finalists-section .member-card-img {
+    width: 106px;
+    height: 106px;
+    outline-color: var(--iskanovators-color);
+}
+
+.names-of-finalists-section .iskanovators-btn {
+    padding: 5px 10px;
+}
+
+.names-of-finalists-section .member-card-img-container .member-card-img:not(:first-child) {
+    margin-inline-start: -50px;
+    position: relative;
+}
+
+/* End Members Section */

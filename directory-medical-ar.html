@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style-front.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/contact-info.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/intlTelInputWithUtils.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+    <title>السياسات والإجراءات وادلة العمل</title>
+</head>
+
+<body class="arabic-version">
+    <!-- Hero Section Start -->
+    <section class="hero-section bg-primary-color-op-10">
+        <div class="container">
+            <h3 class="text-primary-color mb-0">دليل الجهات الطبية</h3>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Contact Info Section Start -->
+    <section class="contact-info-section py-4">
+        <div class="container">
+            <div
+                class="filters-section d-flex justify-content-between flex-column flex-lg-row flex-wrap  gap-3 radius-8 mb-4">
+                <div class="row g-3 align-items-center flex-grow-1 ">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="search-wrapper">
+                            <input type="text" class="form-control search-input outline-gray-color-op-25 radius-8"
+                                placeholder="البحث عن طريق الكلمات الرئيسية"
+                                aria-label="البحث عن طريق الكلمات الرئيسية" />
+                            <span class="search-icon">
+                                <picture>
+                                    <img src="./assets/icons/Search_alt.svg" alt="" />
+                                </picture>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <select class="form-select filter-select-input radius-8">
+                            <option value="حسب موقع المكتب" selected>
+                                اختر الجهة الطبية
+                            </option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="secondary-btn w-fit">
+                    <h6 class="m-0">إعادة تعيين </h6>
+                    <picture>
+                        <img src="./assets/icons/Refresh_2.svg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="table-wrapper border-gray-color-op-25 radius-8 overflow-y-hidden">
+                <table class="table align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-name border-gray-color-op-25">
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <h5 class="mb-0">الاسم</h5>
+                                    <span class="sort-wrapper">
+                                        <picture>
+                                            <img src="./assets/icons/Up - Down arrow.svg" alt="" />
+                                        </picture>
+                                    </span>
+                                </div>
+                            </th>
+                            <th scope="col" class="col-name border-gray-color-op-25">
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <h5 class="mb-0">المسمى الوظيفي</h5>
+                                    <div class="sort-wrapper">
+                                        <picture>
+                                            <img src="./assets/icons/Up - Down arrow.svg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col" class="col-name border-gray-color-op-25">
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <h5 class="mb-0">هاتف العمل</h5>
+                                    <div class="sort-wrapper">
+                                        <picture>
+                                            <img src="./assets/icons/Up - Down arrow.svg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col" class="col-name border-gray-color-op-25">
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <h5 class="mb-0">رقم الهاتف المحمول</h5>
+                                    <div class="sort-wrapper">
+                                        <picture>
+                                            <img src="./assets/icons/Up - Down arrow.svg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col" class="col-name border-gray-color-op-25">
+                                <div class="d-flex justify-content-between align-items-center gap-3">
+                                    <h5 class="mb-0">البريد الإلكتروني</h5>
+                                    <div class="sort-wrapper">
+                                        <picture>
+                                            <img src="./assets/icons/Up - Down arrow.svg" alt="" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">ياسين زيد حمزة</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">مسؤول أول - مبيعات وتسويق العقارات</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">38429</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">0789372374</h5>
+                            </td>
+                            <td class="name-col border-gray-color-op-25">
+                                <h5 class="text-gray-color mb-0">example@hbtf.com.jo</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-md-0 mt-3">
+                <div class="rows-info d-flex align-items-center">
+                    <h6 class="d-flex justify-content-between align-items-center flex-wrap mb-0 text-gray-color">
+                        <span class="pages-numbers mb-0">1-10 من 50</span>
+                        <span class="pages-number-text mb-0">
+                            <span>عدد الصفوف في الصفحة:</span>
+                            <div class="d-inline-block rows-select-wrapper">
+                                <select class="form-select rows-select" aria-label="عدد الصفوف في الصفحة">
+                                    <option value="10" selected>10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </div>
+                        </span>
+                    </h6>
+                </div>
+                <!-- Start Pagination -->
+                <div class="pagination-wrapper mt-4">
+                    <nav aria-label="Page">
+                        <ul class="pagination justify-content-start pagination-container px-0 mb-0">
+                            <li class="page-item">
+                                <a class="page-link rounded-circle page-disabled" href="#" aria-label="Previous">
+                                    <picture>
+                                        <img src="./assets/icons/CaretLeft.svg" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">
+                                    <h5 class="mb-0">1</h5>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <h5 class="mb-0">2</h5>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <h5 class="mb-0">3</h5>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <h5 class="mb-0">...</h5>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <h5 class="mb-0">14</h5>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link rounded-circle" href="#" aria-label="Next">
+                                    <picture>
+                                        <img src="./assets/icons/CaretLeft.svg" alt="" class="caret-left-rotate" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End Pagination -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact Info Section End -->
+    <!-- Start Footer Content -->
+    <footer>
+        <h6 class="m-0 text-center text-white py-2">
+            النص هنا
+        </h6>
+    </footer>
+    <!-- Start Footer Content -->
+</body>
+
+</html>

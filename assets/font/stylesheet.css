@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Black.eot');
+    src: url('NotoKufiArabic-Black.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Black.woff2') format('woff2'),
+        url('NotoKufiArabic-Black.woff') format('woff'),
+        url('NotoKufiArabic-Black.ttf') format('truetype'),
+        url('NotoKufiArabic-Black.svg#NotoKufiArabic-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Bold.eot');
+    src: url('NotoKufiArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Bold.woff2') format('woff2'),
+        url('NotoKufiArabic-Bold.woff') format('woff'),
+        url('NotoKufiArabic-Bold.ttf') format('truetype'),
+        url('NotoKufiArabic-Bold.svg#NotoKufiArabic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-ExtraBold.eot');
+    src: url('NotoKufiArabic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-ExtraBold.woff2') format('woff2'),
+        url('NotoKufiArabic-ExtraBold.woff') format('woff'),
+        url('NotoKufiArabic-ExtraBold.ttf') format('truetype'),
+        url('NotoKufiArabic-ExtraBold.svg#NotoKufiArabic-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-ExtraLight.eot');
+    src: url('NotoKufiArabic-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-ExtraLight.woff2') format('woff2'),
+        url('NotoKufiArabic-ExtraLight.woff') format('woff'),
+        url('NotoKufiArabic-ExtraLight.ttf') format('truetype'),
+        url('NotoKufiArabic-ExtraLight.svg#NotoKufiArabic-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Light.eot');
+    src: url('NotoKufiArabic-Light.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Light.woff2') format('woff2'),
+        url('NotoKufiArabic-Light.woff') format('woff'),
+        url('NotoKufiArabic-Light.ttf') format('truetype'),
+        url('NotoKufiArabic-Light.svg#NotoKufiArabic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Medium.eot');
+    src: url('NotoKufiArabic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Medium.woff2') format('woff2'),
+        url('NotoKufiArabic-Medium.woff') format('woff'),
+        url('NotoKufiArabic-Medium.ttf') format('truetype'),
+        url('NotoKufiArabic-Medium.svg#NotoKufiArabic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Regular.eot');
+    src: url('NotoKufiArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Regular.woff2') format('woff2'),
+        url('NotoKufiArabic-Regular.woff') format('woff'),
+        url('NotoKufiArabic-Regular.ttf') format('truetype'),
+        url('NotoKufiArabic-Regular.svg#NotoKufiArabic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-SemiBold.eot');
+    src: url('NotoKufiArabic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-SemiBold.woff2') format('woff2'),
+        url('NotoKufiArabic-SemiBold.woff') format('woff'),
+        url('NotoKufiArabic-SemiBold.ttf') format('truetype'),
+        url('NotoKufiArabic-SemiBold.svg#NotoKufiArabic-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('NotoKufiArabic-Thin.eot');
+    src: url('NotoKufiArabic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('NotoKufiArabic-Thin.woff2') format('woff2'),
+        url('NotoKufiArabic-Thin.woff') format('woff'),
+        url('NotoKufiArabic-Thin.ttf') format('truetype'),
+        url('NotoKufiArabic-Thin.svg#NotoKufiArabic-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
