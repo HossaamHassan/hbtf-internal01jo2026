@@ -10,7 +10,7 @@
 }
 
 .iskan-gain-inner-section .terms-conditions-card .cms-content ul {
-  grid-template-columns: 1fr !important;
+  margin-bottom: 0;
 }
 /* Discount Details Container End */
 

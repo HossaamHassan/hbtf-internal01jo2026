@@ -1,0 +1,300 @@
+.header-image-section.header-slider .header-image::before {
+  background: linear-gradient(to right, #00000000, #0000004d);
+}
+
+.header-image-section .swiper-slide {
+  position: relative;
+}
+.header-image-section .controls-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.header-image-section .controls-container .header-swiper-pagination {
+  margin-bottom: 1.3rem;
+}
+
+.header-image-section
+  .controls-container
+  .header-swiper-pagination
+  .swiper-pagination-bullet {
+  background-color: var(--white-color) !important;
+}
+
+.header-image-section
+  .controls-container
+  .header-swiper-pagination
+  .swiper-pagination-bullet-active {
+  transform: scale(1.3) !important;
+}
+
+.header-image-section .controls-container .header-swiper-button-prev i,
+.header-image-section .controls-container .header-swiper-button-next i {
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+
+.header-image-section .controls-container .swiper-pause-btn {
+  border: 3px solid var(--white-color);
+  padding: 10px;
+  border-radius: var(--radius-full);
+  background-color: transparent;
+  color: var(--white-color);
+  font-size: 0.9rem;
+  margin-bottom: 1.3rem;
+  z-index: 1;
+}
+
+.header-image-section .controls-container .swiper-pause-btn img,
+.header-image-section .controls-container .swiper-pause-btn i {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
+
+@media (max-width: 991.98px) {
+  .header-image-section.header-slider .header-image img {
+    min-height: 300px;
+  }
+}
+
+/* Bank Campaign Section */
+.bank-campaign-section .campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7rem;
+}
+/* Cms Content */
+.bank-campaign-section .cms-content ul {
+  grid-template-columns: 1fr !important;
+}
+
+.bank-campaign-section .cms-content ul li {
+  font-weight: 500;
+}
+
+.bank-campaign-section .cms-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.bank-campaign-section .cms-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Video Section */
+.bank-campaign-section .video-section .video-container .video-popup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #00000066;
+  transition: opacity 0.3s ease;
+}
+
+.bank-campaign-section .video-section .video-container .video-popup .play-icon {
+  background-color: #ffffff59;
+  width: 45px;
+  height: 45px;
+}
+
+.bank-campaign-section .ad-image-container {
+  max-height: 1100px;
+}
+
+.bank-campaign-section .ad-cms-content {
+  padding: 1.8rem 1.2rem;
+}
+
+.bank-campaign-section .ad-cms-content .cms-content ul {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .bank-campaign-section .campaign-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* table */
+.bank-campaign-section .attached-files-section .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid;
+}
+
+.bank-campaign-section .attached-files-section .table tbody tr td {
+  border-bottom: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
+}
+
+.bank-campaign-section .attached-files-section .table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 767.98px) {
+  .bank-campaign-section .attached-files-section .table tbody tr td {
+    padding-block: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bank-campaign-section
+    .attached-files-section
+    .attached-files-table
+    .primary-btn {
+    width: 100%;
+  }
+}
+
+/* table */
+.bank-campaign-section .opportunity-calculation .tables-container {
+    overflow: hidden;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.bank-campaign-section .opportunity-calculation .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid;
+  border-bottom: 0;
+}
+
+.bank-campaign-section .opportunity-calculation .table-wrapper:last-child {
+  border-bottom: 1px solid;
+}
+
+.bank-campaign-section .opportunity-calculation .table thead th {
+  color: var(--primary-color) !important;
+  background-color: rgb(89 92 163 / 30%);
+  border-inline-end: 1px solid rgb(89 92 163 / 40%) !important;
+  padding-inline: 1rem;
+  padding-block: 12px;
+  text-wrap: nowrap;
+}
+
+.bank-campaign-section .opportunity-calculation .table thead th:last-child {
+  border-inline-end: none !important;
+}
+
+.bank-campaign-section .opportunity-calculation .table tbody tr td {
+  border-bottom: 1px solid;
+  border-inline-end: 1px solid;
+  padding-inline: 1rem;
+  padding-block: 12px;
+}
+
+.bank-campaign-section .opportunity-calculation .table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+.bank-campaign-section .opportunity-calculation .table tbody tr td:last-child {
+  border-inline-end: none;
+}
+
+.bank-campaign-section .opportunity-calculation .inner-table tbody tr td:last-child {
+    border-bottom-width: 1px !important;
+}
+
+.bank-campaign-section
+  .opportunity-calculation
+  .table:first-child
+  tbody
+  tr
+  .row-span {
+  border-bottom: 0;
+}
+
+.bank-campaign-section
+  .opportunity-calculation
+  .table
+  tbody
+  tr
+  .row-span:last-child {
+  border-inline-end: none;
+  border-inline-start-width: 1px;
+  border-bottom-width: 0;
+}
+
+.bank-campaign-section .opportunity-calculation .table th:last-child,
+.bank-campaign-section .opportunity-calculation .table td:last-child {
+  width: 15%;
+  white-space: nowrap;
+}
+
+@media (min-width: 1399.98px) {
+  .bank-campaign-section
+    .opportunity-calculation
+    .table
+    tbody
+    tr
+    td:first-child {
+    min-width: 500px;
+  }
+
+  .bank-campaign-section
+    .opportunity-calculation
+    .inner-table
+    tbody
+    tr
+    td:first-child {
+    min-width: 500px;
+  }
+
+  .bank-campaign-section
+    .opportunity-calculation
+    .inner-table
+    tbody
+    tr
+    td {
+    min-width: 400px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bank-campaign-section
+    .opportunity-calculation
+    .table
+    tbody
+    tr
+    td:first-child {
+    min-width: 400px;
+  }
+
+  .bank-campaign-section
+    .opportunity-calculation
+    .inner-table
+    tbody
+    tr
+    td {
+    min-width: 300px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bank-campaign-section
+    .opportunity-calculation
+    .table
+    tbody
+    tr
+    td:first-child {
+    min-width: auto;
+  }
+
+  .bank-campaign-section .opportunity-calculation .name-col {
+    white-space: nowrap;
+  }
+
+  .bank-campaign-section .ads-section .container {
+    max-width: var(--container-width) !important;
+  }
+}
+
+.bank-campaign-section .ads-section .container {
+  max-width: 70%;
+}
+
+.bank-campaign-section .add-space-section .add-space-container {
+  background-color: #ffffff80;
+  border: 1px solid rgb(87 87 86 / 40%);
+}
+
+/* Bank Campaign Section */
