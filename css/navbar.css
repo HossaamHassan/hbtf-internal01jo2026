@@ -1,3 +1,7 @@
+.top-nav {
+  border-top: 8px solid var(--primary-color);
+}
+
 .top-nav .search-wrapper {
   position: relative;
 }
