@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style-front.css" />
     <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/paris-campaign.css" />
     <link rel="stylesheet" href="./css/custom.css" />
 
@@ -23,6 +24,258 @@
   </head>
 
   <body class="arabic-version">
+    <nav class="top-nav sticky-top bg-white shadow-sm py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo-container d-flex align-items-center gap-1">
+          <picture>
+            <img src="./assets/icons/link_alt-1.svg" alt="" />
+          </picture>
+          <h5 class="mb-0">روابط التطبيقات</h5>
+        </div>
+        <div class="search-wrapper d-lg-block d-none">
+          <input
+            type="text"
+            class="form-control search-input"
+            placeholder="البحث"
+            aria-label="البحث"
+          />
+          <span class="search-icon">
+            <picture>
+              <img src="./assets/icons/Search_alt.svg" alt="" />
+            </picture>
+          </span>
+        </div>
+        <ul
+          class="top-nav-tools d-flex gap-1 align-items-center justify-content-center h-100 m-0 gap-sm-2"
+        >
+          <li class="d-lg-none">
+            <a
+              href="#"
+              class="d-flex align-items-center px-1 gap-1 search-btn text-primary-color"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <div class="icon-nav">
+            <picture>
+              <img src="./assets/icons/Component 289.svg" alt="" />
+            </picture>
+          </div>
+          <li class="bell">
+            <div class="icon-nav">
+              <picture>
+                <img
+                  src="./assets/icons/Component 290.svg"
+                  alt=""
+                  class="bell-icon"
+                />
+              </picture>
+            </div>
+            <div class="notifications-container radius-8 px-3 shadow">
+              <div
+                class="notifications-heading border-bottom border-gray-color-op-25 pt-3 pb-4 d-flex flex-wrap justify-content-between align-items-center gap-2"
+              >
+                <h4 class="text-primary-color mb-0">التنبيهات</h4>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <div class="form-check form-switch">
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >رؤية الغير مقروءة فقط</label
+                    >
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                  <a href="#">
+                    <picture>
+                      <img src="./assets/icons/Component 132.svg" alt="" />
+                    </picture>
+                  </a>
+                  <a href="#">
+                    <picture>
+                      <img src="./assets/icons/Check_ring.svg" alt="" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="notification-readed py-1 border-bottom border-gray-color-op-25"
+              >
+                <p class="text-pink-color mb-0">تمت قراءة 3 تنبيهات من اصل 6</p>
+              </div>
+              <div class="notification-card active py-3">
+                <div
+                  class="notification-alert mb-1 d-flex align-items-center justify-content-end"
+                >
+                  <i class="fa-solid fa-circle"></i>
+                  <div class="notification-title">
+                    <p class="mb-0">تعاميم</p>
+                  </div>
+                </div>
+                <div class="notification-content">
+                  لوريم إيبسوم هو ببساطة نص شكلي يُستخدم في صناعة الطباعة
+                  والتنضيد. وقد استُخدم هذا النص منذ زمن طويل.
+                </div>
+              </div>
+              <div class="notification-card active py-3">
+                <div
+                  class="notification-alert mb-1 d-flex align-items-center justify-content-end"
+                >
+                  <i class="fa-solid fa-circle"></i>
+                  <div class="notification-title">
+                    <p class="mb-0">تعاميم</p>
+                  </div>
+                </div>
+                <div class="notification-content">
+                  لوريم إيبسوم هو ببساطة نص شكلي يُستخدم في صناعة الطباعة
+                  والتنضيد. وقد استُخدم هذا النص منذ زمن طويل.
+                </div>
+              </div>
+              <div class="notification-card active py-3">
+                <div
+                  class="notification-alert mb-1 d-flex align-items-center justify-content-end"
+                >
+                  <i class="fa-solid fa-circle"></i>
+                  <div class="notification-title">
+                    <p class="mb-0">تعاميم</p>
+                  </div>
+                </div>
+                <div class="notification-content">
+                  لوريم إيبسوم هو ببساطة نص شكلي يُستخدم في صناعة الطباعة
+                  والتنضيد. وقد استُخدم هذا النص منذ زمن طويل.
+                </div>
+              </div>
+              <div class="notification-card active py-3">
+                <div
+                  class="notification-alert mb-1 d-flex align-items-center justify-content-end"
+                >
+                  <i class="fa-solid fa-circle"></i>
+                  <div class="notification-title">
+                    <p class="mb-0">تعاميم</p>
+                  </div>
+                </div>
+                <div class="notification-content">
+                  لوريم إيبسوم هو ببساطة نص شكلي يُستخدم في صناعة الطباعة
+                  والتنضيد. وقد استُخدم هذا النص منذ زمن طويل.
+                </div>
+              </div>
+              <div class="notification-card active py-3">
+                <div
+                  class="notification-alert mb-1 d-flex align-items-center justify-content-end"
+                >
+                  <i class="fa-solid fa-circle"></i>
+                  <div class="notification-title">
+                    <p class="mb-0">تعاميم</p>
+                  </div>
+                </div>
+                <div class="notification-content">
+                  لوريم إيبسوم هو ببساطة نص شكلي يُستخدم في صناعة الطباعة
+                  والتنضيد. وقد استُخدم هذا النص منذ زمن طويل.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tools-btn">
+            <div class="icon-nav">
+              <picture>
+                <img
+                  src="./assets/icons/Component 292.svg"
+                  alt=""
+                  class="pen-icon"
+                />
+              </picture>
+            </div>
+            <div class="tools-container radius-8 px-3 shadow">
+              <div
+                class="tools-heading border-bottom border-gray-color-op-25 py-3 d-flex flex-wrap justify-content-between align-items-center gap-2"
+              >
+                <h4 class="text-primary-color mb-0">ادواتي</h4>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">نسخ الرابط</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="copy-link"
+                  />
+                </div>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">دليل الجهات الطبية</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="medical-providers-directory"
+                  />
+                </div>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">عروض الموظفين</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="employee-offers"
+                  />
+                </div>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">الكافتيريا</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="cafeteria"
+                  />
+                </div>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">صور الفعاليات</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="event-photos"
+                  />
+                </div>
+              </div>
+              <div
+                class="tool-card py-3 d-flex justify-content-between align-items-center gap-1"
+              >
+                <h6 class="mb-0">نماذج الفروع</h6>
+                <div class="form-check form-switch px-0">
+                  <input
+                    class="form-check-input mx-0"
+                    type="checkbox"
+                    role="switch"
+                    id="branch-models"
+                  />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Start Header Image -->
     <section class="header-image-section header-slider position-relative">
       <div class="swiper header-image-swiper">
@@ -246,6 +499,30 @@
       <h6 class="m-0 text-center text-white py-2">النص هنا</h6>
     </footer>
     <!-- Start Footer Content -->
+
+    <!-- Search Container -->
+    <div class="search-nav-container overflow-hidden">
+      <div class="searchBarOpen">
+        <form class="searchBarOpen--input" id="custom-search-form">
+          <div class="d-flex align-items-centr gap-2">
+            <input
+              type="text"
+              name="title"
+              id="search-title-input"
+              required
+              placeholder="ابحث هنا"
+              data-url-name="title"
+            />
+            <button>
+              <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </button>
+          </div>
+        </form>
+        <span class="searchBarOpen--closeBtn"
+          ><i class="fa-solid fa-x"></i
+        ></span>
+      </div>
+    </div>
     <script>
       // Mobile Slider
       const homeMobileSlider = new Swiper(".header-mobile-slider", {
